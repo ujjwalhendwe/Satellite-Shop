@@ -1,0 +1,2770 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<!-- Font -->
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600%7CUbuntu:300,400,500,700" rel="stylesheet">
+
+	<!-- CSS -->
+	<link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap-reboot.min.css') }}">
+	<link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap-grid.min.css') }}">
+	<link rel="stylesheet" href="{{ url_for('static', filename='css/owl.carousel.min.css') }}">
+	<link rel="stylesheet" href="{{ url_for('static', filename='css/jquery.mCustomScrollbar.min.css') }}">
+	<link rel="stylesheet" href="{{ url_for('static', filename='css/nouislider.min.css') }}">
+	<link rel="stylesheet" href="{{ url_for('static', filename='css/ionicons.min.css') }}">
+	<link rel="stylesheet" href="{{ url_for('static', filename='css/plyr.css') }}">
+	<link rel="stylesheet" href="{{ url_for('static', filename='css/photoswipe.css') }}">
+	<link rel="stylesheet" href="{{ url_for('static', filename='css/default-skin.css') }}">
+	<link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+	<link rel="stylesheet" href="{{ url_for('static', filename='css/store.css') }}"
+
+	<!-- Favicons -->
+	<link rel="icon"  href="{{ url_for('static', filename='icon/favi.png') }}">
+
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+	<meta name="author" content="Ujjwal Hendwe">
+	<title>Satellite Shop : space for all</title>
+
+</head>
+<body class="body">
+	
+	<!-- header -->
+	<header class="header">
+		<div class="header__wrap">
+			<div class="container">
+				<div class="row">
+					<div class="col-12">
+						<div class="header__content">
+							<!-- header logo -->
+							<a href="index.html" class="header__logo">
+								<img src="{{ url_for('static', filename='img/satelliteshop2.png') }}" alt="">
+							</a>
+							<!-- end header logo -->
+
+							<!-- header nav -->
+							<ul class="header__nav">
+								<li class="header__nav-item">
+									<a href="index.html" class="header__nav-link">Home</a>
+								</li>
+
+								<li class="header__nav-item">
+									<a class="dropdown-toggle header__nav-link" href="#" role="button" id="dropdownMenuCatalog" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Categories</a>
+
+									<ul class="dropdown-menu header__dropdown-menu" aria-labelledby="dropdownMenuCatalog">
+										<li><a href="spare.html">Spare Parts</a></li>
+										<li><a href="scist.html">Scientific Instruments</a></li>
+										<l1><a href="commctn.html">Communication devices</a></l1>
+										<li><a href="books.html">Books</a></li>
+										<l1><a href="orientation.html">Orientation finders</a></l1>
+										<l1><a href="containers.html">containers</a></l1>
+										<l1><a href="power.html">Power Source</a></l1>
+										<li><a href="details.html">Details of satellites</a></li>
+									</ul>
+								</li>
+								<!-- end dropdown -->
+
+								<li class="header__nav-item">
+									<a class="dropdown-toggle header__nav-link" href="#" role="button" id="dropdownMenuCatalog" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Brands</a>
+
+									<ul class="dropdown-menu header__dropdown-menu" aria-labellledby="dropdownMenuCatalog">
+										<li><a href="https://www.relativityspace.com/" target="_blank">Relativity Space</a></li>
+										
+										<li><a href="https://www.lockheedmartin.com/" target="_blank">Lockheed Martin</a></li>
+										<li><a href="https://www.thinkom.com/" target="_blank">ThinKom</a></li>
+										<li><a href="https://hiber.global/" target="_blank">Hiber</a></li>
+										<li><a href="https://www.capellaspace.com/" target="_blank">Capella Space</a></li>
+										<li><a href="https://www.dish.com/" target="_blank">Dish Network</a></li>
+										<li><a href="https://www.stengg.com/en/singapore-technologies-engineering/" target="_blank">ST Engineering</a></li>
+									</ul>
+								</li>
+
+								<li class="header__nav-item">
+									<a class="dropdown-toggle header__nav-link" href="#" role="button" id="dropdownMenuCatalog" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Contact</a>
+
+									<ul class="dropdown-menu header__dropdown-menu" aria-labellledby="dropdownMenuCatalog">
+										<li><a href="tel:+91 9011675787" class="icon ion-ios-call"> +91 9011675787</a></li>
+						                <li><a href="mailto:cse2000001028@iiti.ac.in" class="icon ion-ios-mail"> Customer Care</a></li>
+										
+									</ul>
+								</li>
+
+								<li class="header__nav-item">
+									<a href="about.html" class="header__nav-link">About</a>
+								</li>
+							</ul>
+							<!-- end header nav -->
+
+							<!-- header auth -->
+							<div class="header__auth">
+						        <a href="/login" class="header__sign-in">
+									<i class="icon ion-ios-log-in"></i>
+									<span>sign in</span>
+								</a>
+								<div></div>
+								<a href="cart.html" class="header__cart">
+									<i class="icon ion-ios-cart" ></i>
+									<span class="cart-contains">0</span>		
+								</a>
+								</div>
+							</div>
+							<!-- end header auth -->
+                      
+							<!-- header menu btn -->
+							<button class="header__btn" type="button">
+								<span></span>
+								<span></span>
+								<span></span>
+							</button>
+							<!-- end header menu btn -->
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+	<!-- end header -->
+
+	<!-- home -->
+	<section class="home">
+		<!-- home bg -->
+		<div class="owl-carousel home__bg">
+			<div class="item home__cover" data-bg="{{ url_for('static', filename='img/home/bence.jpeg') }}"></div>
+			<div class="item home__cover" data-bg="{{ url_for('static', filename='img/home/satellite1.jpg') }}"></div>
+			<div class="item home__cover" data-bg="{{ url_for('static', filename='img/home/mars.jpg') }}"></div>
+			<div class="item home__cover" data-bg="{{ url_for('static', filename='img/home/jose.jpeg') }}"></div>
+			<div class="item home__cover" data-bg="{{ url_for('static', filename='img/home/satellite.jpeg') }}"></div>
+			<div class="item home__cover" data-bg="{{ url_for('static', filename='img/home/stars.jpg') }}"></div>
+			<div class="item home__cover" data-bg="{{ url_for('static', filename='img/home/jusk.jpeg') }}"></div>
+			<div class="item home__cover" data-bg="{{ url_for('static', filename='img/home/nebula1.jpg') }}"></div>
+			<div class="item home__cover" data-bg="{{ url_for('static', filename='img/home/richard.jpeg') }}"></div>
+			<div class="item home__cover" data-bg="{{ url_for('static', filename='img/home/spacex.jpeg') }}"></div>
+		</div>
+		<!-- end home bg -->
+
+		<div class="container">
+			<div class="row">
+				<div class="col-12">
+					<h1 class="home__title"><b>SATELLITES</b> IN THE UNIVERSE</h1>
+                    <br></br>
+					<button class="home__nav home__nav--prev" type="button">
+						<i class="icon ion-ios-arrow-round-back"></i>
+					</button>
+					<button class="home__nav home__nav--next" type="button">
+						<i class="icon ion-ios-arrow-round-forward"></i>
+					</button>
+				</div>
+
+				<div class="col-12">
+					<div class="owl-carousel home__carousel">
+						<div class="item">
+							<!-- card -->
+							<div class="card card--big">
+								<div class="card__cover">
+									<img src="{{ url_for('static', filename='img/covers/Sentinel-removebg-preview.png') }}" alt="">
+									<a href="sentinel.html" class="card__play">
+										<i class="icon ion-ios-rocket"></i>
+									</a>
+						    	</div>
+								<br><br><br>
+								<div class="card__content">
+									<h3 class="card__title"><a href="sentinel.html">Sentinel</a></h3>
+									<span class="card__category">
+										<a href="#">Copernicus Programme</a>
+										<a href="#">European Space Agency</a>
+									</span>
+									<span class="card__rate"><i class="icon ion-ios-rocket"></i>3 April 2014</span>
+								</div>
+							</div>
+							<!-- end card -->
+						</div>
+
+						<div class="item">
+							<!-- card -->
+							<div class="card card--big">
+								<div class="card__cover">
+									<img src="{{ url_for('static', filename='img/covers/cubesat-removebg-preview.png') }}" alt="">
+									<a href="proba.html" class="card__play">
+										<i class="icon ion-ios-rocket"></i>
+									</a>
+								</div>
+								<br><br>
+								<div class="card__content">
+									<h3 class="card__title"><a href="proba.html">Project for On-Board Autonomy (PROBA)</a></h3>
+									<span class="card__category">
+										<a href="#">ISRO</a>
+										<a href="#">Belgium Satellite</a>
+									</span>
+									<span class="card__rate"><i class="icon ion-ios-rocket"></i>22 October 2001</span>
+								</div>
+							</div>
+							<!-- end card -->
+						</div>
+
+						<div class="item">
+							<!-- card -->
+							<div class="card card--big">
+								<div class="card__cover">
+									<img src="{{ url_for('static', filename='img/covers/geoeye-removebg-preview.png') }}" alt="">
+									<a href="geoeye.html" class="card__play">
+										<i class="icon ion-ios-rocket"></i>
+									</a>
+								</div>
+								<br>
+								<div class="card__content">
+									<h3 class="card__title"><a href="geoeye.html">Geoeye</a></h3>
+									<span class="card__category">
+										<a href="#">American commercial satellite</a>
+										<a href="#">Herndon, Virginia</a>
+									</span>
+									<span class="card__rate"><i class="icon ion-ios-rocket"></i>29 January 2013</span>
+								</div>
+							</div>
+							<!-- end card -->
+						</div>
+
+						<div class="item">
+							<!-- card -->
+							<div class="card card--big">
+								<div class="card__cover">
+									<img src="{{ url_for('static', filename='img/covers/icesat-removebg-preview.png') }}" alt="">
+									<a href="icesat.html" class="card__play">
+										<i class="icon ion-ios-rocket"></i>
+									</a>
+								</div>
+								<br>
+								<div class="card__content">
+									<h3 class="card__title"><a href="icesat.html">Icesat</a></h3>
+									<span class="card__category">
+										<a href="#">NASA's Earth Observing System</a>
+										<a href="#"> Vandenberg Air Force Base</a>
+										<a href="#">California</a>
+					 			</span>
+									<span class="card__rate"><i class="icon ion-ios-rocket"></i>13 January 2003</span>
+								</div>
+							</div>
+							<!-- end card -->
+						</div>
+
+						<div class="item">
+							<!-- card -->
+							<div class="card card--big">
+								<div class="card__cover">
+									<img src="{{ url_for('static', filename='img/covers/Aura-removebg-preview.png') }}" alt="">
+									<a href="aura.html" class="card__play">
+										<i class="icon ion-ios-rocket"></i>
+									</a>
+								</div>
+								<br><br>
+								<div class="card__content">
+									<h3 class="card__title"><a href="aura.html">Aura</a></h3>
+									<span class="card__category">
+										<a href="#"> NASA's scientific research satellite</a>
+										<a href="#">studying the Earth's ozone layer, air quality and climate.</a>
+										<a href="#">Vandenberg Air Force Base</a>
+									</span>
+									<span class="card__rate"><i class="icon ion-ios-rocket"></i>15 July 2004</span>
+								</div>
+							</div>
+							<!-- end card -->
+						</div>
+
+						<div class="item">
+							<!-- card -->
+							<div class="card card--big">
+								<div class="card__cover">
+									<img src="{{ url_for('static', filename='img/covers/mars-global-surveyor-removebg-preview.png') }}" alt="">
+									<a href="marsgs.html" class="card__play">
+										<i class="icon ion-ios-rocket"></i>
+									</a>
+								</div>
+								<br>
+								<div class="card__content">
+									<h3 class="card__title"><a href="marsgs.html">Mars global surveyor</a></h3>
+									<span class="card__category">
+										<a href="#">American robotic space probe</a>
+										<a href="#">NASA's Jet Propulsion Laboratory</a>
+										<a href="#">Mars Exploration Program</a>
+									</span>
+									<span class="card__rate"><i class="icon ion-ios-rocket"></i>26 November 1996</span>
+								</div>
+							</div>
+							<!-- end card -->
+						</div>
+
+						<div class="item">
+							<!-- card -->
+							<div class="card card--big">
+								<div class="card__cover">
+									<img src="{{ url_for('static', filename='img/covers/GPS-removebg-preview.png') }}" alt="">
+									<a href="gnss.html" class="card__play">
+										<i class="icon ion-ios-rocket"></i>
+									</a>
+								</div>
+								<br>
+								<div class="card__content">
+									<h3 class="card__title"><a href="gnss.html"></a>Global Navigation Satellite System</h3>
+									<span class="card__category">
+										<a href="#">Russian space-based satellite navigation system</a>
+										<a href="#">radionavigation-satellite service</a>
+									</span>
+									<span class="card__rate"><i class="icon ion-ios-rocket"></i>12 October 1982</span>
+								</div>
+							</div>
+							<!-- end card -->
+						</div>
+
+						<div class="item">
+							<!-- card -->
+							<div class="card card--big">
+								<div class="card__cover">
+									<img src="{{ url_for('static', filename='img/covers/QuickBird-removebg-preview.png') }}" alt="">
+									<a href="quickbird.html" class="card__play">
+										<i class="icon ion-ios-rocket"></i>
+									</a>
+								</div>
+								<div class="card__content">
+									<h3 class="card__title"><a href="quickbird.html">Quickbird</a></h3>
+									<span class="card__category">
+										<a href="#">high-resolution commercial Earth observation satellite</a>
+										<a href="#">Owned by DigitalGlobe/a>
+									</span>
+									<span class="card__rate"><i class="icon ion-ios-rocket"></i>20 March 2001</span>
+								</div>
+							</div>
+							<!-- end card -->
+						</div>
+
+						<div class="item">
+							<!-- card -->
+							<div class="card card--big">
+								<div class="card__cover">
+									<img src="{{ url_for('static', filename='img/covers/smos-satellite-removebg-preview.png') }}" alt="">
+									<a href="smos.html" class="card__play">
+										<i class="icon ion-ios-rocket"></i>
+									</a>
+								</div>
+								<br>
+								<div class="card__content">
+									<h3 class="card__title"><a href="smos.html">Soil Moisture and Ocean Salinity</a></h3>
+									<span class="card__category">
+										<a href="#">ESA's Living Planet Programme</a>
+										<a href="#">Earth's water cycle and climate</a>
+										<a href="#"> Plesetsk Cosmodrome</a>
+									</span>
+									<span class="card__rate"><i class="icon ion-ios-rocket"></i>2 November 2009</span>
+								</div>
+							</div>
+							<!-- end card -->
+						</div>
+
+						<div class="item">
+							<!-- card -->
+							<div class="card card--big">
+								<div class="card__cover">
+									<img src="{{ url_for('static', filename='img/covers/megha-removebg-preview.png') }}" alt="">
+									<a href="megha.html" class="card__play">
+										<i class="icon ion-ios-rocket"></i>
+									</a>
+								</div>
+								<br><br><br><br>
+								<div class="card__content">
+									<h3 class="card__title"><a href="megha.html">Megha-Tropique</a></h3>
+									<span class="card__category">
+										<a href="#">ISRO</a>
+										<a href="#">French Centre National d’Etudes Spatiales (CNES)</a>
+										<a href="#">Deployed into orbit by a PSLV rocket</a>
+									</span>
+									<span class="card__rate"><i class="icon ion-ios-rocket"></i>10 October 2011</span>
+								</div>
+							</div>
+							<!-- end card -->
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- end home -->
+
+	<!-- content -->
+	<section class="content">
+		<div class="content__head">
+			<div class="container">
+				<div class="row">
+					<div class="col-12">
+						<!-- content title -->
+						<h2 class="content__title">PRODUCTS</h2>
+						<!-- end content title -->
+						<!-- content tabs nav -->
+						<ul class="nav nav-tabs content__tabs" id="content__tabs" role="tablist">
+							<li class="nav-item">
+								<a class="nav-link active" data-toggle="tab" href="#tab-1" role="tab" aria-controls="tab-1" aria-selected="true">Antenna Systems</a>
+							</li>
+
+							<li class="nav-item">
+								<a class="nav-link" data-toggle="tab" href="#tab-2" role="tab" aria-controls="tab-2" aria-selected="false">Cameras and payloads</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" data-toggle="tab" href="#tab-3" role="tab" aria-controls="tab-3" aria-selected="false">Launch Adapters</a>
+							</li>
+
+							<li class="nav-item">
+								<a class="nav-link" data-toggle="tab" href="#tab-4" role="tab" aria-controls="tab-4" aria-selected="false">Power Systems</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" data-toggle="tab" href="#tab-5" role="tab" aria-controls="tab-5" aria-selected="false">Software services</a>
+							</li>
+
+							<li class="nav-item">
+								<a class="nav-link" data-toggle="tab" href="#tab-6" role="tab" aria-controls="tab-6" aria-selected="false">Solar panels</a>
+							</li>
+						</ul>
+						<!-- end content tabs nav -->
+
+						<!-- content mobile tabs nav -->
+						<div class="content__mobile-tabs" id="content__mobile-tabs">
+							<div class="content__mobile-tabs-btn dropdown-toggle" role="navigation" id="mobile-tabs" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+								<input type="button" value="New items">
+								<span></span>
+							</div>
+
+							<div class="content__mobile-tabs-menu dropdown-menu" aria-labelledby="mobile-tabs">
+								<ul class="nav nav-tabs" role="tablist">
+									<li class="nav-item"><a class="nav-link active" id="1-tab" data-toggle="tab" href="#tab-1" role="tab" aria-controls="tab-1" aria-selected="true">Antenna Systems</a></li>
+
+									<li class="nav-item"><a class="nav-link" id="2-tab" data-toggle="tab" href="#tab-2" role="tab" aria-controls="tab-2" aria-selected="false">Cameras and payloads</a></li>
+
+						
+
+									<li class="nav-item"><a class="nav-link" id="3-tab" data-toggle="tab" href="#tab-3" role="tab" aria-controls="tab-3" aria-selected="false">Launch Adapters</a></li>
+
+
+									<li class="nav-item"><a class="nav-link" id="4-tab" data-toggle="tab" href="#tab-4" role="tab" aria-controls="tab-4" aria-selected="false">Power Systems</a></li>
+
+
+									<li class="nav-item"><a class="nav-link" id="5-tab" data-toggle="tab" href="#tab-5" role="tab" aria-controls="tab-5" aria-selected="false">Software services</a></li>
+
+									<li class="nav-item"><a class="nav-link" id="6-tab" data-toggle="tab" href="#tab-6" role="tab" aria-controls="tab-6" aria-selected="false">Solar panels</a></li>
+				       			</ul>
+							</div>
+						</div>
+						<!-- end content mobile tabs nav -->
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="container">
+			<!-- content tabs -->
+			<div class="tab-content" id="myTabContent">
+				<div class="tab-pane fade show active" id="tab-1" role="tabpanel" aria-labelledby="1-tab">
+					<div class="row">
+							<div class=" d-flex">
+									<div class="abc shop-items">
+
+									<div class="shop-item row">
+										<span class="card__title shop-item-title "><h3>Antenna-6U</h3></span>
+										
+										<div class="shop-item-image col col-sm-2" id="this_one">
+											<img  src="{{ url_for('static', filename='img/covers/Antenna-6U.png') }}">
+											<a href="6u.html" class="card__play">
+												<i class="icon ion-ios-rocket"></i>
+											</a>
+											<div class="shop-item-details col col-sm-2">
+												
+												<button class="btn btn-primary shop-item-button" id="shopitembtn" type="button">ADD TO CART</button>
+												<span class="shop-item-price">$7300</span>
+											</div>
+										</div>
+										
+										<div class="col-8 col-sm-8 col-sm-4 margin">
+											<div class="card__content">
+												<span class="card__category">
+													<a href="#">Circular or linear polarization</a>
+													<a href="#">Dual redundant deployment system</a>
+													<a href="#">Multiple mounting positions</a>
+												</span>
+			
+												<div class="card__wrap">
+													<span class="shop-item-pricee"><i class="icon ion-ios-rocket"></i>7,300 $</span>
+			
+													<ul class="card__list">
+														<li>USA</li>
+														<li>16+</li>
+													</ul>
+												</div>
+			
+												<div class="card__description">
+													<p>The Antenna System for 6/12U CubeSats design is based on the hugely successful ISISPACE deployable antenna system for 1U up to 3U CubeSats.</p>
+												</div>
+											</div>
+										</div>
+									</div>
+									
+									<div class="shop-item row">
+										<span class="card__title shop-item-title" style="color: white;"><h3>EXA GCA01–Antenna</h3></span>
+										
+										<div class="shop-item-image col col-sm-2">
+											<img  src="{{ url_for('static', filename='img/covers/EXA-removebg-preview.png') }}">
+											<a href="6u.html" class="card__play">
+												<i class="icon ion-ios-rocket"></i>
+											</a>
+											<div class="shop-item-details col col-sm-2">
+												<button class="btn btn-primary shop-item-button" id="shopitembtn" type="button">ADD TO CART</button>
+												<span class="shop-item-price">$2300</span>
+											</div>
+										</div>
+										
+										<div class="col-8 col-sm-8 col-sm-4 margin">
+											<div class="card__content">
+											
+												<span class="card__category">
+													<a href="#">compact GNSS active patch antenna</a>
+													<a href="#">small form factor</a>
+													<a href="#">Multiple mounting positions</a>
+												</span>
+			
+												<div class="card__wrap">
+													<span class="shop-item-pricee"><i class="icon ion-ios-rocket"></i>2,300 $</span>
+			
+													<ul class="card__list">
+														<li>USA</li>
+														<li>16+</li>
+													</ul>
+												</div>
+			
+												<div class="card__description">
+													<p>Manufactured according to NASA and ESA space standards and materials
+														Functional, performance, thermal bake out and vibration tests provided w/documentation.
+												</p>
+												</div>
+											</div>
+										</div>
+									</div>
+
+								</div>
+                            
+								<div class="abc shop-items">
+
+									<div class="shop-item row">
+										<span class="card__title shop-item-title "><h3>Helios deployable antenna HCT</h3></span>
+										
+										<div class="shop-item-image col col-sm-2">
+											<img  src="{{ url_for('static', filename='img/covers/Helios-deployable-antenna-HCT.png') }}">
+											<a href="6u.html" class="card__play">
+												<i class="icon ion-ios-rocket"></i>
+											</a>
+											<div class="shop-item-details col col-sm-2">
+												<button class="btn btn-primary shop-item-button" id="shopitembtn" type="button">ADD TO CART</button>
+												<span class="shop-item-price"> $12300</span>
+											</div>
+										</div>
+										
+										<div class="col-8 col-sm-8 col-sm-4 margin">
+											<div class="card__content">
+												<span class="card__category">
+													<a href="#">Lefthand or Righthand Circular antenna polarization</a>
+													<a href="#">Dual redundant deployment system</a>
+													<a href="#"> Frequency Range: 400-3000 MHz</a>
+												</span>
+			
+												<div class="card__wrap">
+													<span class="shop-item-pricee"><i class="icon ion-ios-rocket"></i>12,300 $</span>
+			
+													<ul class="card__list">
+														<li>CHINA</li>
+														<li>16+</li>
+													</ul>
+												</div>
+			
+												<div class="card__description">
+													<p>The Helios Deployable Antenna can be customized to operate from 400Mhz to 3000Mhz. The HCT Helios series of antennas can accommodate several operational purposes.... </p>
+												</div>
+											</div>
+										</div>
+									</div>
+									
+									<div class="shop-item row">
+										<span class="card__title shop-item-title" style="color: white;"><h3>EXA SSA02- 34dB </h3></span>
+										
+										<div class="shop-item-image col col-sm-2">
+											<img  src="{{ url_for('static', filename='img/covers/EXA-SSA02-34dB-Wide-Bandwidth-amplified-S-band-Patch-Antenna-removebg-preview.png') }}">
+											<a href="6u.html" class="card__play">
+												<i class="icon ion-ios-rocket"></i>
+											</a>
+											<div class="shop-item-details col col-sm-2">
+												<button class="btn btn-primary shop-item-button" id="shopitembtn" type="button">ADD TO CART</button>
+												<span class="shop-item-price"> $7500</span>
+											</div>
+										</div>
+										
+										<div class="col-8 col-sm-8 col-sm-4 margin">
+											<div class="card__content">
+											
+												<span class="card__category">
+													<a href="#">Flight heritage since 2020</a>
+													<a href="#">Wide bandwidth: 2025 to 2120 MHz and 2200 to 2300 MHz</a>
+													<a href="#">Multiple mounting positions</a>
+												</span>
+			
+												<div class="card__wrap">
+													<span class="shop-item-pricee"><i class="icon ion-ios-rocket"></i>7,500 $</span>
+			
+													<ul class="card__list">
+														<li>USA</li>
+														<li>16+</li>
+													</ul>
+												</div>
+			
+												<div class="card__description">
+													<p>The EXA SSA02 is the power-amplified version of the SSA01 wide bandwidth S-band antenna than can accommodate a bandwidth of up to 195 MHz for missions that need greater speed and/or bandwidth separation capabilities and great flexibility on the final frequencies selection.</p>
+												</div>
+											</div>
+										</div>
+									</div>
+
+								</div>
+					    	</div>
+					        <div class=" d-flex">
+								<div class="abc shop-items">
+
+								<div class="shop-item row">
+									<span class="card__title shop-item-title "><h3>Chameleon Rear</h3></span>
+									
+									<div class="shop-item-image col col-sm-2">
+										<img  src="{{ url_for('static', filename='img/covers/Chameleon-Rear-CP.png') }}">
+										<a href="6u.html" class="card__play">
+											<i class="icon ion-ios-rocket"></i>
+										</a>
+										<div class="shop-item-details col col-sm-2">
+											
+											<button class="btn btn-primary shop-item-button" id="shopitembtn" type="button">ADD TO CART</button>
+											<span class="shop-item-price">$144000</span>
+										</div>
+									</div>
+									
+									<div class="col-8 col-sm-8 col-sm-4 margin">
+										<div class="card__content">
+											<span class="card__category">
+												<a href="#">Hyperspectral linescan imaging</a>
+												<a href="#">Dual redundant deployment system</a>
+												<a href="#">optimised for integration with 3U</a>
+											</span>
+		
+											<div class="card__wrap">
+												<span class="shop-item-pricee"><i class="icon ion-ios-rocket"></i>1,44,000 $</span>
+		
+												<ul class="card__list">
+													<li>USA</li>
+													<li>16+</li>
+												</ul>
+											</div>
+		
+											<div class="card__description">
+												<p>The Antenna System for 6/12U CubeSats design is based on the hugely successful ISISPACE deployable antenna system for 1U up to 3U CubeSats.</p>
+											</div>
+										</div>
+									</div>
+								</div>
+								
+								<div class="shop-item row">
+									<span class="card__title shop-item-title" style="color: white;"><h3>gecko2</h3></span>
+									
+									<div class="shop-item-image col col-sm-2">
+										<img  src="{{ url_for('static', filename='img/covers/Gecko2-CP.png') }}">
+										<a href="6u.html" class="card__play">
+											<i class="icon ion-ios-rocket"></i>
+										</a>
+										<div class="shop-item-details col col-sm-2">
+											<button class="btn btn-primary shop-item-button" id="shopitembtn" type="button">ADD TO CART</button>
+											<span class="shop-item-price">$15500</span>
+										</div>
+									</div>
+									
+									<div class="col-8 col-sm-8 col-sm-4 margin">
+										<div class="card__content">
+										
+											<span class="card__category">
+												<a href="#">RGB imaging at high frame rates</a>
+												<a href="#">Large integrated high-speed data storage</a>
+												<a href="#">Compact form factor</a>
+											</span>
+		
+											<div class="card__wrap">
+												<span class="shop-item-pricee"><i class="icon ion-ios-rocket"></i>1,55,000 $</span>
+		
+												<ul class="card__list">
+													<li>USA</li>
+													<li>16+</li>
+												</ul>
+											</div>
+		
+											<div class="card__description">
+												<p>Manufactured according to NASA and ESA space standards and materials
+													Functional, performance, thermal bake out and vibration tests provided w/documentation.
+											</p>
+											</div>
+										</div>
+									</div>
+								</div>
+
+							</div>
+						
+							<div class="abc shop-items">
+
+								<div class="shop-item row">
+									<span class="card__title shop-item-title "><h3>ISIS GPS Antenna</h3></span>
+									
+									<div class="shop-item-image col col-sm-2">
+										<img  src="{{ url_for('static', filename='img/covers/GPS-Antenna-removebg-preview.png') }}">
+										<a href="6u.html" class="card__play">
+											<i class="icon ion-ios-rocket"></i>
+										</a>
+										<div class="shop-item-details col col-sm-2">
+											<button class="btn btn-primary shop-item-button" id="shopitembtn" type="button">ADD TO CART</button>
+											<span class="shop-item-price"> $5400</span>
+										</div>
+									</div>
+									
+									<div class="col-8 col-sm-8 col-sm-4 margin">
+										<div class="card__content">
+											<span class="card__category">
+												<a href="#">Frequency range: 1575 MHz (GPS-L1)</a>
+												<a href="#">Signal gain up to 34.5 dB</a>
+												<a href="#">Multiple mounting positions</a>
+											</span>
+		
+											<div class="card__wrap">
+												<span class="shop-item-pricee"><i class="icon ion-ios-rocket"></i>5,400 $</span>
+		
+												<ul class="card__list">
+													<li>IND</li>
+													<li>16+</li>
+												</ul>
+											</div>
+		
+											<div class="card__description">
+												<p>The ISIS GPS patch antenna is a compact, low mass active antenna, designed for GPS-L1. This passive antenna is suitable for providing CubeSat platforms with precise positioning and is compatible with the ISIS structures.</p>
+											</div>
+										</div>
+									</div>
+								</div>
+								
+								<div class="shop-item row">
+									<span class="card__title shop-item-title" style="color: white;"><h3>Wide Bandwidth S-band Patch Antenna</h3></span>
+									
+									<div class="shop-item-image col col-sm-2">
+										<img  src="{{ url_for('static', filename='img/covers/EXA-SSA01-Wide-Bandwidth-S-band-Patch-Antenna-removebg-preview.png') }}">
+										<a href="6u.html" class="card__play">
+											<i class="icon ion-ios-rocket"></i>
+										</a>
+										<div class="shop-item-details col col-sm-2">
+											<button class="btn btn-primary shop-item-button" id="shopitembtn" type="button">ADD TO CART</button>
+											<span class="shop-item-price">$2400</span>
+										</div>
+									</div>
+									
+									<div class="col-8 col-sm-8 col-sm-4 margin">
+										<div class="card__content">
+										
+											<span class="card__category">
+												<a href="#">Flight heritage since 2020</a>
+												<a href="#">Wide bandwidth: 2025 to 2120 MHz and 2200 to 2300 MHz</a>
+												<a href="#">Only 4.8mm thickness</a>
+											</span>
+		
+											<div class="card__wrap">
+												<span class="shop-item-pricee"><i class="icon ion-ios-rocket"></i>2,400 $</span>
+		
+												<ul class="card__list">
+													<li>JAPAN</li>
+													<li>16+</li>
+												</ul>
+											</div>
+		
+											<div class="card__description">
+												<p>The EXA SSA01 is a wide bandwidth S-band antenna than can accommodate a bandwidth of up to 195 MHz for missions that need greater speed and/or bandwidth separation capabilities and great flexibility on the final frequencies selection.</p>
+											</div>
+										</div>
+									</div>
+								</div>
+
+							</div>
+						</div>
+					</div>	
+							
+								
+
+							
+
+					
+				</div>
+               <!-- cameras and payloads-->
+				<div class="tab-pane fade" id="tab-2" role="tabpanel" aria-labelledby="2-tab">
+					<div class="row shop-items">
+						<!-- card -->
+						<div class="shop-item col-6 col-sm-4 col-lg-3 col-xl-2">
+							<div class="card">
+								<div class="card__cover shop-item-image">
+									<img src="{{ url_for('static', filename='img/covers/Chameleon-Rear-CP.png') }}" alt="">
+									<a href="chamleon.html" class="card__play">
+										<i class="icon ion-ios-rocket"></i>
+									</a>
+								</div>
+								
+								<div class="card__content">
+									<h3 class="card__title shop-item-title"><a href="chameleon.html">Chameleon Rear</a></h3>
+									<span class="card__category">
+										<a href="#">Hyperspectral linescan imaging</a>
+										<a href="#">Hyperspectral linescan imaging</a>
+										<a href="#">optimised for integration with 3U</a>
+									</span>
+									<span class="card__rate shop-item-price"><i class="icon ion-ios-rocket"></i>144000 $</span>
+								</div>
+								<div class="addtocart ">
+									<a >
+										<i class="icon ion-ios-cart shop-item-button "> add to cart</i>
+									</a>
+								</div>
+							</div>
+						</div>
+						<!-- end card -->
+
+						
+						<!-- card -->
+						<div class="shop-item col-6 col-sm-4 col-lg-3 col-xl-2">
+							<div class="card">
+								<div class="card__cover shop-item-image">
+									<img src="{{ url_for('static', filename='img/covers/Gecko2-CP.png') }}" alt="">
+									<a href="GPS.html" class="card__play">
+										<i class="icon ion-ios-rocket"></i>
+									</a>
+								</div>
+								<div class="card__content">
+									<h3 class="card__title shop-item-title"><a href="GPS.html">gecko2</a></h3>
+									<span class="card__category">
+										<a href="#">RGB imaging at high frame rates</a>
+										<a href="#">Large integrated high-speed data storage</a>
+										<a href="#">Compact form factor</a>
+									</span>
+									<span class="card__rate shop-item-price"><i class="icon ion-ios-rocket"></i>155000 $</span>
+								</div>
+								<div class="addtocart">
+									<a  >
+										<i class="icon ion-ios-cart shop-item-button"> add to cart</i>
+									</a>
+								</div>
+							</div>
+						</div>
+						<!-- end card -->
+
+						<!-- card -->
+						<div class="shop-item col-6 col-sm-4 col-lg-3 col-xl-2">
+							<div class="card">
+								<div class="card__cover shop-item-image">
+									<img src="{{ url_for('static', filename='img/covers/Caiman-CP.png') }}" alt="">
+									<a href="GPS.html" class="card__play">
+										<i class="icon ion-ios-rocket"></i>
+									</a>
+								</div>
+								<div class="card__content">
+									<h3 class="card__title shop-item-title"><a href="GPS.html">Caiman</a></h3>
+									<span class="card__category">
+										<a href="#">Large integrated </a>
+										<a href="#">Compact form factor</a>
+										<a href="#">larger CubeSat frames</a>
+									</span>
+									<span class="card__rate shop-item-price"><i class="icon ion-ios-rocket"></i>138000 $</span>
+								</div>
+								<div class="addtocart">
+									<a  >
+										<i class="icon ion-ios-cart shop-item-button"> add to cart</i>
+									</a>
+								</div>
+							</div>
+						</div>
+						<!-- end card -->
+
+						<!-- card -->
+						<div class="shop-item col-6 col-sm-4 col-lg-3 col-xl-2">
+							<div class="card">
+								<div class="card__cover shop-item-image">
+									<img src="{{ url_for('static', filename='img/covers/Dragon-Eye-CP.png') }}" alt="">
+									<a href="GPS.html" class="card__play">
+										<i class="icon ion-ios-rocket"></i>
+									</a>
+								</div>
+								<div class="card__content">
+									<h3 class="card__title shop-item-title"><a href="GPS.html">Dragon Eye</a></h3>
+									<span class="card__category">
+										<a href="#">high-speed data storage</a>
+										<a href="#">integration with 2U</a>
+										<a href="#">Swath @ 500 km</a>
+									</span>
+									<span class="card__rate shop-item-price"><i class="icon ion-ios-rocket"></i>99000 $</span>
+								</div>
+								<div class="addtocart">
+									<a >
+										<i class="icon ion-ios-cart shop-item-button"> add to cart</i>
+									</a>
+								</div>
+							</div>
+						</div>
+						<!-- end card -->
+
+						<!-- card -->
+						<div class="shop-item col-6 col-sm-4 col-lg-3 col-xl-2">
+							<div class="card">
+								<div class="card__cover shop-item-image">
+									<img src="{{ url_for('static', filename='img/covers/iq-wireless-s-band-transmitter-for-pico-and-nanosatellites-CP.png') }}" alt="">
+									<a href="GPS.html" class="card__play">
+										<i class="icon ion-ios-rocket"></i>
+									</a>
+								</div>
+								<div class="card__content">
+									<h3 class="card__title shop-item-title"><a href="GPS.html">wireless and transmitter for pico and nanosatellites</a></h3>
+									<span class="card__category">
+										<a href="#">space-proven ruggedized optics.</a>
+										<a href="#">integrated mass storage.</a>
+										<a href="#"> downlinked a lower data rate</a>
+									</span>
+									<span class="card__rate shop-item-price"><i class="icon ion-ios-rocket"></i>85000 $</span>
+								</div>
+								<div class="addtocart">
+									<a >
+										<i class="icon ion-ios-cart shop-item-button"> add to cart</i>
+									</a>
+								</div>
+							</div>
+						</div>
+						<!-- end card -->
+
+						<!-- card -->
+						<div class=" shop-item col-6 col-sm-4 col-lg-3 col-xl-2">
+							<div class="card">
+								<div class="card__cover shop-item-image">
+									<img src="{{ url_for('static', filename='img/covers/ISIS-TXS-High-data-rate-S-band-transmitter-CP.png') }}" alt="">
+									<a href="GPS.html" class="card__play">
+										<i class="icon ion-ios-rocket"></i>
+									</a>
+								</div>
+								<div class="card__content">
+									<h3 class="card__title shop-item-title"><a href="GPS.html">ISIS TXS high data rate transmitter</a></h3>
+									<span class="card__category">
+										<a href="#">RGB images</a>
+										<a href="#">5 frames per second</a>
+										<a href="#">matrix sensor in snapshot</a>
+									</span>
+									<span class="card__rate shop-item-price"><i class="icon ion-ios-rocket"></i>127000 $</span>
+								</div>
+								<div class="addtocart">
+									<a  >
+										<i class="icon ion-ios-cart shop-item-button"> Add to cart</i>
+									</a>
+								</div>
+							</div>
+						</div>
+						<!-- end card -->
+
+						<!-- card -->
+						<div class="shop-item col-6 col-sm-4 col-lg-3 col-xl-2">
+							<div class="card">
+								<div class="card__cover shop-item-image">
+									<img src="{{ url_for('static', filename='img/covers/ISIS-VHF-uplink-UHF-downlink-Full-Duplex-Transceiver-CP.png') }}" alt="">
+									<a href="GPS.html" class="card__play">
+										<i class="icon ion-ios-rocket"></i>
+									</a>
+								</div>
+								<div class="card__content">
+									<h3 class="card__title shop-item-title"><a href="GPS.html">ISIS VHF uplink Transceiver</a></h3>
+									<span class="card__category">
+										<a href="#">streamed out to an on-board computer</a>
+										<a href="#">combination of proprietary hardware</a>
+										<a href="#">ntegrated into the compact design</a>
+									</span>
+									<span class="card__rate shop-item-price"><i class="icon ion-ios-rocket"></i>199000 $</span>
+								</div>
+								<div class="addtocart">
+									<a  >
+										<i class="icon ion-ios-cart shop-item-button"> add to cart</i>
+									</a>
+								</div>
+							</div>
+						</div>
+						<!-- end card -->
+
+						<!-- card -->
+						<div class="shop-item col-6 col-sm-4 col-lg-3 col-xl-2">
+							<div class="card">
+								<div class="card__cover shop-item-image">
+									<img src="{{ url_for('static', filename='img/covers/Mantis-G044-CP.png') }}" alt="">
+									<a href="GPS.html" class="card__play">
+										<i class="icon ion-ios-rocket"></i>
+									</a>
+								</div>
+								<div class="card__content">
+									<h3 class="card__title shop-item-title"><a href="GPS.html">Mantis G044</a></h3>
+									<span class="card__category">
+										<a href="#">space-qualified electronics</a>
+										<a href="#">High capacity, high-performance</a>
+										<a href="#">No need for additional payload </a>
+									</span>
+									<span class="card__rate shop-item-price"><i class="icon ion-ios-rocket"></i>120000 $</span>
+								</div>
+								<div class="addtocart">
+									<a  >
+										<i class="icon ion-ios-cart shop-item-button"> Add to cart</i>
+									</a>
+								</div>
+							</div>
+						</div>
+						<!-- end card -->
+
+						<!-- card -->
+						<div class="shop-item col-6 col-sm-4 col-lg-3 col-xl-2">
+							<div class="card">
+								<div class="card__cover shop-item-image">
+									<img src="{{ url_for('static', filename='img/covers/NanoCam_C1U-CP.png') }}" alt="">
+									<a href="GPS.html" class="card__play">
+										<i class="icon ion-ios-rocket"></i>
+									</a>
+								</div>
+								<div class="card__content">
+									<h3 class="card__title shop-item-title"><a href="GPS.html">NanoCam C1U</a></h3>
+									<span class="card__category">
+										<a href="#">VIS-NIR spectral range configurable</a>
+										<a href="#">Multispectral line scanning imager</a>
+										<a href="#">Hyperspectral line scanning imager</a>
+									</span>
+									<span class="card__rate shop-item-price"><i class="icon ion-ios-rocket"></i>1,80,000 $</span>
+								</div>
+								<div class="addtocart">
+									<a  >
+										<i class="icon ion-ios-cart shop-item-button"> add to cart</i>
+									</a>
+								</div>
+							</div>
+						</div>
+						<!-- end card -->
+
+						<!-- card -->
+						<div class="shop-item col-6 col-sm-4 col-lg-3 col-xl-2">
+							<div class="card">
+								<div class="card__cover shop-item-image">
+									<img src="{{ url_for('static', filename='img/covers/Simple-3-X-nearspace-CP.png') }}" alt="">
+									<a href="GPS.html" class="card__play">
+										<i class="icon ion-ios-rocket"></i>
+									</a>
+								</div>
+								<div class="card__content">
+									<h3 class="card__title shop-item-title"><a href="GPS.html">Simple 3x nearspace</a></h3>
+									<span class="card__category">
+										<a href="#">Spatial Resolution @ 500km: 9.6m</a>
+										<a href="#">Swath @ 500km 32 km</a>
+										<a href="#">Spectral Bands Multispectral</a>
+									</span>
+									<span class="card__rate shop-item-price"><i class="icon ion-ios-rocket"></i>170000 $</span>
+								</div>
+								<div class="addtocart">
+									<a  >
+										<i class="icon ion-ios-cart shop-item-button"> Add to cart</i>
+									</a>
+								</div>
+							</div>
+						</div>
+						<!-- end card -->
+
+						<!-- card -->
+						<!-- <div class="shop-item col-6 col-sm-4 col-lg-3 col-xl-2">
+							<div class="card">
+								<div class="card__cover shop-item-image">
+									<img src="img/covers/TOTEM-CP.png" alt="">
+									<a href="GPS.html" class="card__play">
+										<i class="icon ion-ios-rocket"></i>
+									</a>
+								</div>
+								<div class="card__content">
+									<h3 class="card__title shop-item-title"><a href="GPS.html">TOTEM</a></h3>
+									<span class="card__category">
+										<a href="#">GB Bayer matrix</a>
+										<a href="#">150 Hyperspectral bands</a>
+										<a href="#">Integrated mass storage Up to 160 GB</a>
+									</span>
+									<span class="card__rate shop-item-price"><i class="icon ion-ios-rocket"></i>157000 $</span>
+								</div>
+								<div class="addtocart">
+									<a  >
+										<i class="icon ion-ios-cart shop-item-button"> Add to cart</i>
+									</a>
+								</div>
+							</div>
+						</div> -->
+						<!-- end card -->
+
+					<!-- card -->
+					<!-- <div class="shop-item col-6 col-sm-4 col-lg-3 col-xl-2">
+						<div class="card">
+							<div class="card__cover shop-item-image">
+								<img src="img/covers/Gecko2-CP.png" alt="">
+								<a href="GPS.html" class="card__play">
+									<i class="icon ion-ios-rocket"></i>
+								</a>
+							</div>
+							<div class="card__content">
+								<h3 class="card__title shop-item-title"><a href="GPS.html">gecko2</a></h3>
+								<span class="card__category">
+									<a href="#">RGB imaging at high frame rates</a>
+									<a href="#">Large integrated high-speed data storage</a>
+									<a href="#">Compact form factor</a>
+								</span>
+								<span class="card__rate shop-item-pricee"><i class="icon ion-ios-rocket"></i>155000 $</span>
+							</div>
+							<div class="addtocart">
+								<a  >
+									<i class="icon ion-ios-cart shop-item-button"> Add to cart</i>
+								</a>
+							</div>
+						</div>
+					</div> -->
+					<!-- end card -->
+					</div>
+				</div>
+
+				
+
+				<div class="tab-pane fade" id="tab-4" role="tabpanel" aria-labelledby="4-tab">
+					<div class="row">
+						<!-- card -->
+						<div class="col-6 col-sm-4 col-lg-3 col-xl-2">
+							<div class="card">
+								<div class="card__cover">
+									<img src="{{ url_for('static', filename='img/covers/adapters/ISIS_ISIPOD_1-Unit-CubeSat-deployer.png') }}" alt="">
+									<a href="GPS.html" class="card__play">
+										<i class="icon ion-ios-rocket"></i>
+									</a>
+								</div>
+								<div class="card__content">
+									<h3 class="card__title"><a href="GPS.html">ISIS ISIPOD1</a></h3>
+									<span class="card__category">
+										<a href="#">access to the integrated CubeSat</a>
+										<a href="#">does not rely on a battery pack</a>
+										<a href="#">Tsurvive_min: – 50 °C</a>
+									</span>
+									<span class="card__rate"><i class="icon ion-ios-rocket"></i>17,000 $</span>
+								</div>
+								<div class="addtocart">
+									<a href="cart.html" >
+										<i class="icon ion-ios-cart"> add to cart</i>
+									</a>
+								</div>
+							</div>
+						</div>
+						<!-- end card -->
+
+						<!-- card -->
+						<div class="col-6 col-sm-4 col-lg-3 col-xl-2">
+							<div class="card">
+								<div class="card__cover">
+									<img src="{{ url_for('static', filename='img/covers/adapters/ISIS_ISIPOD_2-Unit-CubeSat-deployer.png') }}" alt="">
+									<a href="GPS.html" class="card__play">
+										<i class="icon ion-ios-rocket"></i>
+									</a>
+								</div>
+								<div class="card__content">
+									<h3 class="card__title"><a href="GPS.html">ISIS ISIPOD2</a></h3>
+									<span class="card__category">
+										<a href="#">Typical Actuation Voltage = 28 V  </a>
+										<a href="#">Quasi Static Load = 15.0 g</a>
+										<a href="#">Fn greater than 90 Hz</a>
+									</span>
+									<span class="card__rate"><i class="icon ion-ios-rocket"></i>1,56,000 $</span>
+								</div>
+								<div class="addtocart">
+									<a href="cart.html" >
+										<i class="icon ion-ios-cart"> add to cart</i>
+									</a>
+								</div>
+							</div>
+						</div>
+						<!-- end card -->
+
+						<!-- card -->
+						<div class="col-6 col-sm-4 col-lg-3 col-xl-2">
+							<div class="card">
+								<div class="card__cover">
+									<img src="{{ url_for('static', filename='img/covers/adapters/ISIS_ISIPOD_3-Unit-CubeSat-deployer.png') }}" alt="">
+									<a href="GPS.html" class="card__play">
+										<i class="icon ion-ios-rocket"></i>
+									</a>
+								</div>
+								<div class="card__content">
+									<h3 class="card__title"><a href="GPS.html">ISIS ISIPOD3</a></h3>
+									<span class="card__category">
+										<a href="#">Typical Actuation Voltage = 28 V  </a>
+										<a href="#">Sine Vibration = 4.0 g 10 Hz to 100 Hz</a>
+										<a href="#">Fn greater than 90 Hz/a>
+									</span>
+									<span class="card__rate"><i class="icon ion-ios-rocket"></i>1,24,000 $</span>
+								</div>
+								<div class="addtocart">
+									<a href="cart.html" >
+										<i class="icon ion-ios-cart"> add to cart</i>
+									</a>
+								</div>
+							</div>
+						</div>
+						<!-- end card -->
+
+						<!-- card -->
+						<div class="col-6 col-sm-4 col-lg-3 col-xl-2">
+							<div class="card">
+								<div class="card__cover">
+									<img src="{{ url_for('static', filename='img/covers/adapters/ISIS_M3S_Microsatellite_Separation_System.png') }}" alt="">
+									<a href="GPS.html" class="card__play">
+										<i class="icon ion-ios-rocket"></i>
+									</a>
+								</div>
+								<div class="card__content">
+									<h3 class="card__title"><a href="GPS.html">ISIS M3S Microstellite system</a></h3>
+									<span class="card__category">
+										<a href="#">Flexible and versatile</a>
+										<a href="#">Shock-free release</a>
+										<a href="#">Based on heritage/a>
+									</span>
+									<span class="card__rate"><i class="icon ion-ios-rocket"></i>81,000 $</span>
+								</div>
+								<div class="addtocart">
+									<a href="cart.html" >
+										<i class="icon ion-ios-cart"> add to cart</i>
+									</a>
+								</div>
+							</div>
+						</div>
+						<!-- end card -->
+
+					<!-- card -->
+						<div class="col-6 col-sm-4 col-lg-3 col-xl-2">
+							<div class="card">
+								<div class="card__cover">
+									<img src="{{ url_for('static', filename='img/covers/adapters/PAS_381S__15___Separation_System.png') }}" alt="">
+									<a href="GPS.html" class="card__play">
+										<i class="icon ion-ios-rocket"></i>
+									</a>
+								</div>
+								<div class="card__content">
+									<h3 class="card__title"><a href="GPS.html">PAS 381S separation system</a></h3>
+									<span class="card__category">
+										<a href="#">MNOT 222S Separation System</a>
+										<a href="#">AS 432S Separation System</a>
+										<a href="#">PRUAG 432S Separation System</a>
+									</span>
+									<span class="card__rate"><i class="icon ion-ios-rocket"></i>1,29,000 $</span>
+								</div>
+								<div class="addtocart">
+									<a href="cart.html" >
+										<i class="icon ion-ios-cart"> add to cart</i>
+									</a>
+								</div>
+							</div>
+						</div>
+						<!-- end card -->
+
+						<!-- card -->
+						<div class="col-6 col-sm-4 col-lg-3 col-xl-2">
+							<div class="card">
+								<div class="card__cover">
+									<img src="{{ url_for('static', filename='img/covers/adapters/PAS_432S__17___Separation_System.png') }}" alt="">
+									<a href="GPS.html" class="card__play">
+										<i class="icon ion-ios-rocket"></i>
+									</a>
+								</div>
+								<div class="card__content">
+									<h3 class="card__title"><a href="GPS.html">PAS 432S separation system</a></h3>
+									<span class="card__category">
+										<a href="#">RUAG 432S Separation System</a>
+										<a href="#">CBOD-LT™ Separation System</a>
+										<a href="#">PAS 432S Separation System</a>
+									</span>
+									<span class="card__rate"><i class="icon ion-ios-rocket"></i>1,22,000 $</span>
+								</div>
+								<div class="addtocart">
+									<a href="cart.html" >
+										<i class="icon ion-ios-cart"> add to cart</i>
+									</a>
+								</div>
+							</div>
+						</div>
+						<!-- end card -->
+
+						<!-- card -->
+						<div class="col-6 col-sm-4 col-lg-3 col-xl-2">
+							<div class="card">
+								<div class="card__cover">
+									<img src="{{ url_for('static', filename='img/covers/adapters/PAS_432S__17___Separation_System.png') }}" alt="">
+									<a href="GPS.html" class="card__play">
+										<i class="icon ion-ios-rocket"></i>
+									</a>
+								</div>
+								<div class="card__content">
+									<h3 class="card__title"><a href="GPS.html">PAS 432S separation system</a></h3>
+									<span class="card__category">
+										<a href="#">RUAG 432S Separation System</a>
+										<a href="#">CBOD-LT™ Separation System</a>
+										<a href="#">PAS 432S Separation System</a>
+									</span>
+									<span class="card__rate"><i class="icon ion-ios-rocket"></i>1,22,000 $</span>
+								</div>
+								<div class="addtocart">
+									<a href="cart.html" >
+										<i class="icon ion-ios-cart"> add to cart</i>
+									</a>
+								</div>
+							</div>
+						</div>
+						<!-- end card -->
+
+						<!-- card -->
+						<div class="col-6 col-sm-4 col-lg-3 col-xl-2">
+							<div class="card">
+								<div class="card__cover">
+									<img src="{{ url_for('static', filename='img/covers/adapters/PAS_381S__15___Separation_System.png') }}" alt="">
+									<a href="GPS.html" class="card__play">
+										<i class="icon ion-ios-rocket"></i>
+									</a>
+								</div>
+								<div class="card__content">
+									<h3 class="card__title"><a href="GPS.html">PAS 381S separation system</a></h3>
+									<span class="card__category">
+										<a href="#">MNOT 222S Separation System</a>
+										<a href="#">AS 432S Separation System</a>
+										<a href="#">PRUAG 432S Separation System</a>
+									</span>
+									<span class="card__rate"><i class="icon ion-ios-rocket"></i>1,29,000 $</span>
+								</div>
+								<div class="addtocart">
+									<a href="cart.html" >
+										<i class="icon ion-ios-cart"> add to cart</i>
+									</a>
+								</div>
+							</div>
+						</div>
+						<!-- end card -->
+							<!-- card -->
+							<div class="col-6 col-sm-4 col-lg-3 col-xl-2">
+								<div class="card">
+									<div class="card__cover">
+										<img src="{{ url_for('static', filename='img/covers/adapters/ISIS_M3S_Microsatellite_Separation_System.png') }}" alt="">
+										<a href="GPS.html" class="card__play">
+											<i class="icon ion-ios-rocket"></i>
+										</a>
+									</div>
+									<div class="card__content">
+										<h3 class="card__title"><a href="GPS.html">ISIS M3S Microstellite system</a></h3>
+										<span class="card__category">
+											<a href="#">Flexible and versatile</a>
+											<a href="#">Shock-free release</a>
+											<a href="#">Based on heritage/a>
+										</span>
+										<span class="card__rate"><i class="icon ion-ios-rocket"></i>81,000 $</span>
+									</div>
+									<div class="addtocart">
+										<a href="cart.html" >
+											<i class="icon ion-ios-cart"> add to cart</i>
+										</a>
+									</div>
+								</div>
+							</div>
+							<!-- end card -->
+
+						<!-- card -->
+						<div class="col-6 col-sm-4 col-lg-3 col-xl-2">
+							<div class="card">
+								<div class="card__cover">
+									<img src="{{ url_for('static', filename='img/covers/adapters/ISIS_ISIPOD_3-Unit-CubeSat-deployer.png') }}" alt="">
+									<a href="GPS.html" class="card__play">
+										<i class="icon ion-ios-rocket"></i>
+									</a>
+								</div>
+								<div class="card__content">
+									<h3 class="card__title"><a href="GPS.html">ISIS ISIPOD3</a></h3>
+									<span class="card__category">
+										<a href="#">Typical Actuation Voltage = 28 V  </a>
+										<a href="#">Sine Vibration = 4.0 g 10 Hz to 100 Hz</a>
+										<a href="#">Fn greater than 90 Hz/a>
+									</span>
+									<span class="card__rate"><i class="icon ion-ios-rocket"></i>1,24,000 $</span>
+								</div>
+								<div class="addtocart">
+									<a href="cart.html" >
+										<i class="icon ion-ios-cart"> add to cart</i>
+									</a>
+								</div>
+							</div>
+						</div>
+						<!-- end card -->
+
+							<!-- card -->
+							<div class="col-6 col-sm-4 col-lg-3 col-xl-2">
+								<div class="card">
+									<div class="card__cover">
+										<img src="{{ url_for('static', filename='img/covers/adapters/ISIS_ISIPOD_2-Unit-CubeSat-deployer.png') }}" alt="">
+										<a href="GPS.html" class="card__play">
+											<i class="icon ion-ios-rocket"></i>
+										</a>
+									</div>
+									<div class="card__content">
+										<h3 class="card__title"><a href="GPS.html">ISIS ISIPOD2</a></h3>
+										<span class="card__category">
+											<a href="#">Typical Actuation Voltage = 28 V  </a>
+											<a href="#">Quasi Static Load = 15.0 g</a>
+											<a href="#">Fn greater than 90 Hz</a>
+										</span>
+										<span class="card__rate"><i class="icon ion-ios-rocket"></i>1,56,000 $</span>
+									</div>
+									<div class="addtocart">
+										<a href="cart.html" >
+											<i class="icon ion-ios-cart"> add to cart</i>
+										</a>
+									</div>
+								</div>
+							</div>
+							<!-- end card -->
+
+						<!-- card -->
+						<div class="col-6 col-sm-4 col-lg-3 col-xl-2">
+							<div class="card">
+								<div class="card__cover">
+									<img src="{{ url_for('static', filename='img/covers/adapters/ISIS_ISIPOD_1-Unit-CubeSat-deployer.png') }}" alt="">
+									<a href="GPS.html" class="card__play">
+										<i class="icon ion-ios-rocket"></i>
+									</a>
+								</div>
+								<div class="card__content">
+									<h3 class="card__title"><a href="GPS.html">ISIS ISIPOD1</a></h3>
+									<span class="card__category">
+										<a href="#">access to the integrated CubeSat</a>
+										<a href="#">does not rely on a battery pack</a>
+										<a href="#">Tsurvive_min: – 50 °C</a>
+									</span>
+									<span class="card__rate"><i class="icon ion-ios-rocket"></i>17,000 $</span>
+								</div>
+								<div class="addtocart">
+									<a href="cart.html" >
+										<i class="icon ion-ios-cart"> add to cart</i>
+									</a>
+								</div>
+							</div>
+						</div>
+						<!-- end card -->
+					</div>
+				</div>
+
+				<div class="tab-pane fade" id="tab-5" role="tabpanel" aria-labelledby="5-tab">
+					<div class="row">
+						<!-- card -->
+						<div class="col-6 col-sm-4 col-lg-3 col-xl-2">
+							<div class="card">
+								<div class="card__cover">
+									<img src="{{ url_for('static', filename='img/covers/adapters/ISIS_ISIPOD_1-Unit-CubeSat-deployer.png') }}" alt="">
+									<a href="GPS.html" class="card__play">
+										<i class="icon ion-ios-rocket"></i>
+									</a>
+								</div>
+								<div class="card__content">
+									<h3 class="card__title"><a href="GPS.html">ISIS ISIPOD1</a></h3>
+									<span class="card__category">
+										<a href="#">access to the integrated CubeSat</a>
+										<a href="#">does not rely on a battery pack</a>
+										<a href="#">Tsurvive_min: – 50 °C</a>
+									</span>
+									<span class="card__rate"><i class="icon ion-ios-rocket"></i>17,000 $</span>
+								</div>
+								<div class="addtocart">
+									<a href="cart.html" >
+										<i class="icon ion-ios-cart"> add to cart</i>
+									</a>
+								</div>
+							</div>
+						</div>
+						<!-- end card -->
+
+						<!-- card -->
+						<div class="col-6 col-sm-4 col-lg-3 col-xl-2">
+							<div class="card">
+								<div class="card__cover">
+									<img src="{{ url_for('static', filename='img/covers/adapters/ISIS_ISIPOD_2-Unit-CubeSat-deployer.png') }}" alt="">
+									<a href="GPS.html" class="card__play">
+										<i class="icon ion-ios-rocket"></i>
+									</a>
+								</div>
+								<div class="card__content">
+									<h3 class="card__title"><a href="GPS.html">ISIS ISIPOD2</a></h3>
+									<span class="card__category">
+										<a href="#">Typical Actuation Voltage = 28 V  </a>
+										<a href="#">Quasi Static Load = 15.0 g</a>
+										<a href="#">Fn greater than 90 Hz</a>
+									</span>
+									<span class="card__rate"><i class="icon ion-ios-rocket"></i>1,56,000 $</span>
+								</div>
+								<div class="addtocart">
+									<a href="cart.html" >
+										<i class="icon ion-ios-cart"> add to cart</i>
+									</a>
+								</div>
+							</div>
+						</div>
+						<!-- end card -->
+
+						<!-- card -->
+						<div class="col-6 col-sm-4 col-lg-3 col-xl-2">
+							<div class="card">
+								<div class="card__cover">
+									<img src="{{ url_for('static', filename='img/covers/adapters/ISIS_ISIPOD_3-Unit-CubeSat-deployer.png') }}" alt="">
+									<a href="GPS.html" class="card__play">
+										<i class="icon ion-ios-rocket"></i>
+									</a>
+								</div>
+								<div class="card__content">
+									<h3 class="card__title"><a href="GPS.html">ISIS ISIPOD3</a></h3>
+									<span class="card__category">
+										<a href="#">Typical Actuation Voltage = 28 V  </a>
+										<a href="#">Sine Vibration = 4.0 g 10 Hz to 100 Hz</a>
+										<a href="#">Fn greater than 90 Hz/a>
+									</span>
+									<span class="card__rate"><i class="icon ion-ios-rocket"></i>1,24,000 $</span>
+								</div>
+								<div class="addtocart">
+									<a href="cart.html" >
+										<i class="icon ion-ios-cart"> add to cart</i>
+									</a>
+								</div>
+							</div>
+						</div>
+						<!-- end card -->
+
+						<!-- card -->
+						<div class="col-6 col-sm-4 col-lg-3 col-xl-2">
+							<div class="card">
+								<div class="card__cover">
+									<img src="{{ url_for('static', filename='img/covers/adapters/ISIS_M3S_Microsatellite_Separation_System.png') }}" alt="">
+									<a href="GPS.html" class="card__play">
+										<i class="icon ion-ios-rocket"></i>
+									</a>
+								</div>
+								<div class="card__content">
+									<h3 class="card__title"><a href="GPS.html">ISIS M3S Microstellite system</a></h3>
+									<span class="card__category">
+										<a href="#">Flexible and versatile</a>
+										<a href="#">Shock-free release</a>
+										<a href="#">Based on heritage/a>
+									</span>
+									<span class="card__rate"><i class="icon ion-ios-rocket"></i>81,000 $</span>
+								</div>
+								<div class="addtocart">
+									<a href="cart.html" >
+										<i class="icon ion-ios-cart"> add to cart</i>
+									</a>
+								</div>
+							</div>
+						</div>
+						<!-- end card -->
+
+					<!-- card -->
+						<div class="col-6 col-sm-4 col-lg-3 col-xl-2">
+							<div class="card">
+								<div class="card__cover">
+									<img src="{{ url_for('static', filename='img/covers/adapters/PAS_381S__15___Separation_System.png') }}" alt="">
+									<a href="GPS.html" class="card__play">
+										<i class="icon ion-ios-rocket"></i>
+									</a>
+								</div>
+								<div class="card__content">
+									<h3 class="card__title"><a href="GPS.html">PAS 381S separation system</a></h3>
+									<span class="card__category">
+										<a href="#">MNOT 222S Separation System</a>
+										<a href="#">AS 432S Separation System</a>
+										<a href="#">PRUAG 432S Separation System</a>
+									</span>
+									<span class="card__rate"><i class="icon ion-ios-rocket"></i>1,29,000 $</span>
+								</div>
+								<div class="addtocart">
+									<a href="cart.html" >
+										<i class="icon ion-ios-cart"> add to cart</i>
+									</a>
+								</div>
+							</div>
+						</div>
+						<!-- end card -->
+
+						<!-- card -->
+						<div class="col-6 col-sm-4 col-lg-3 col-xl-2">
+							<div class="card">
+								<div class="card__cover">
+									<img src="{{ url_for('static', filename='img/covers/adapters/PAS_432S__17___Separation_System.png') }}" alt="">
+									<a href="GPS.html" class="card__play">
+										<i class="icon ion-ios-rocket"></i>
+									</a>
+								</div>
+								<div class="card__content">
+									<h3 class="card__title"><a href="GPS.html">PAS 432S separation system</a></h3>
+									<span class="card__category">
+										<a href="#">RUAG 432S Separation System</a>
+										<a href="#">CBOD-LT™ Separation System</a>
+										<a href="#">PAS 432S Separation System</a>
+									</span>
+									<span class="card__rate"><i class="icon ion-ios-rocket"></i>1,22,000 $</span>
+								</div>
+								<div class="addtocart">
+									<a href="cart.html" >
+										<i class="icon ion-ios-cart"> add to cart</i>
+									</a>
+								</div>
+							</div>
+						</div>
+						<!-- end card -->
+
+						<!-- card -->
+						<div class="col-6 col-sm-4 col-lg-3 col-xl-2">
+							<div class="card">
+								<div class="card__cover">
+									<img src="{{ url_for('static', filename='img/covers/adapters/PAS_432S__17___Separation_System.png') }}" alt="">
+									<a href="GPS.html" class="card__play">
+										<i class="icon ion-ios-rocket"></i>
+									</a>
+								</div>
+								<div class="card__content">
+									<h3 class="card__title"><a href="GPS.html">PAS 432S separation system</a></h3>
+									<span class="card__category">
+										<a href="#">RUAG 432S Separation System</a>
+										<a href="#">CBOD-LT™ Separation System</a>
+										<a href="#">PAS 432S Separation System</a>
+									</span>
+									<span class="card__rate"><i class="icon ion-ios-rocket"></i>1,22,000 $</span>
+								</div>
+								<div class="addtocart">
+									<a href="cart.html" >
+										<i class="icon ion-ios-cart"> add to cart</i>
+									</a>
+								</div>
+							</div>
+						</div>
+						<!-- end card -->
+
+						<!-- card -->
+						<div class="col-6 col-sm-4 col-lg-3 col-xl-2">
+							<div class="card">
+								<div class="card__cover">
+									<img src="{{ url_for('static', filename='img/covers/adapters/PAS_381S__15___Separation_System.png') }}" alt="">
+									<a href="GPS.html" class="card__play">
+										<i class="icon ion-ios-rocket"></i>
+									</a>
+								</div>
+								<div class="card__content">
+									<h3 class="card__title"><a href="GPS.html">PAS 381S separation system</a></h3>
+									<span class="card__category">
+										<a href="#">MNOT 222S Separation System</a>
+										<a href="#">AS 432S Separation System</a>
+										<a href="#">PRUAG 432S Separation System</a>
+									</span>
+									<span class="card__rate"><i class="icon ion-ios-rocket"></i>1,29,000 $</span>
+								</div>
+								<div class="addtocart">
+									<a href="cart.html" >
+										<i class="icon ion-ios-cart"> add to cart</i>
+									</a>
+								</div>
+							</div>
+						</div>
+						<!-- end card -->
+							<!-- card -->
+							<div class="col-6 col-sm-4 col-lg-3 col-xl-2">
+								<div class="card">
+									<div class="card__cover">
+										<img src="{{ url_for('static', filename='img/covers/adapters/ISIS_M3S_Microsatellite_Separation_System.png') }}" alt="">
+										<a href="GPS.html" class="card__play">
+											<i class="icon ion-ios-rocket"></i>
+										</a>
+									</div>
+									<div class="card__content">
+										<h3 class="card__title"><a href="GPS.html">ISIS M3S Microstellite system</a></h3>
+										<span class="card__category">
+											<a href="#">Flexible and versatile</a>
+											<a href="#">Shock-free release</a>
+											<a href="#">Based on heritage/a>
+										</span>
+										<span class="card__rate"><i class="icon ion-ios-rocket"></i>81,000 $</span>
+									</div>
+									<div class="addtocart">
+										<a href="cart.html" >
+											<i class="icon ion-ios-cart"> add to cart</i>
+										</a>
+									</div>
+								</div>
+							</div>
+							<!-- end card -->
+
+						<!-- card -->
+						<div class="col-6 col-sm-4 col-lg-3 col-xl-2">
+							<div class="card">
+								<div class="card__cover">
+									<img src="{{ url_for('static', filename='img/covers/adapters/ISIS_ISIPOD_3-Unit-CubeSat-deployer.png') }}" alt="">
+									<a href="GPS.html" class="card__play">
+										<i class="icon ion-ios-rocket"></i>
+									</a>
+								</div>
+								<div class="card__content">
+									<h3 class="card__title"><a href="GPS.html">ISIS ISIPOD3</a></h3>
+									<span class="card__category">
+										<a href="#">Typical Actuation Voltage = 28 V  </a>
+										<a href="#">Sine Vibration = 4.0 g 10 Hz to 100 Hz</a>
+										<a href="#">Fn greater than 90 Hz/a>
+									</span>
+									<span class="card__rate"><i class="icon ion-ios-rocket"></i>1,24,000 $</span>
+								</div>
+								<div class="addtocart">
+									<a href="cart.html" >
+										<i class="icon ion-ios-cart"> add to cart</i>
+									</a>
+								</div>
+							</div>
+						</div>
+						<!-- end card -->
+
+							<!-- card -->
+							<div class="col-6 col-sm-4 col-lg-3 col-xl-2">
+								<div class="card">
+									<div class="card__cover">
+										<img src="{{ url_for('static', filename='img/covers/adapters/ISIS_ISIPOD_2-Unit-CubeSat-deployer.png') }}" alt="">
+										<a href="GPS.html" class="card__play">
+											<i class="icon ion-ios-rocket"></i>
+										</a>
+									</div>
+									<div class="card__content">
+										<h3 class="card__title"><a href="GPS.html">ISIS ISIPOD2</a></h3>
+										<span class="card__category">
+											<a href="#">Typical Actuation Voltage = 28 V  </a>
+											<a href="#">Quasi Static Load = 15.0 g</a>
+											<a href="#">Fn greater than 90 Hz</a>
+										</span>
+										<span class="card__rate"><i class="icon ion-ios-rocket"></i>1,56,000 $</span>
+									</div>
+									<div class="addtocart">
+										<a href="cart.html" >
+											<i class="icon ion-ios-cart"> add to cart</i>
+										</a>
+									</div>
+								</div>
+							</div>
+							<!-- end card -->
+
+						<!-- card -->
+						<div class="col-6 col-sm-4 col-lg-3 col-xl-2">
+							<div class="card">
+								<div class="card__cover">
+									<img src="{{ url_for('static', filename='img/covers/adapters/ISIS_ISIPOD_1-Unit-CubeSat-deployer.png') }}" alt="">
+									<a href="GPS.html" class="card__play">
+										<i class="icon ion-ios-rocket"></i>
+									</a>
+								</div>
+								<div class="card__content">
+									<h3 class="card__title"><a href="GPS.html">ISIS ISIPOD1</a></h3>
+									<span class="card__category">
+										<a href="#">access to the integrated CubeSat</a>
+										<a href="#">does not rely on a battery pack</a>
+										<a href="#">Tsurvive_min: – 50 °C</a>
+									</span>
+									<span class="card__rate"><i class="icon ion-ios-rocket"></i>17,000 $</span>
+								</div>
+								<div class="addtocart">
+									<a href="cart.html" >
+										<i class="icon ion-ios-cart"> add to cart</i>
+									</a>
+								</div>
+							</div>
+						</div>
+						<!-- end card -->
+					</div>
+				
+					<div class="tab-pane fade" id="tab-3" role="tabpanel" aria-labelledby="3-tab">
+						<div class="row">
+							<!-- card -->
+							<div class="col-6 col-sm-4 col-lg-3 col-xl-2">
+								<div class="card">
+									<div class="card__cover">
+										<img src="{{ url_for('static', filename='img/covers/adapters/ISIS_ISIPOD_1-Unit-CubeSat-deployer.png') }}" alt="">
+										<a href="GPS.html" class="card__play">
+											<i class="icon ion-ios-rocket"></i>
+										</a>
+									</div>
+									<div class="card__content">
+										<h3 class="card__title"><a href="GPS.html">ISIS ISIPOD1</a></h3>
+										<span class="card__category">
+											<a href="#">access to the integrated CubeSat</a>
+											<a href="#">does not rely on a battery pack</a>
+											<a href="#">Tsurvive_min: – 50 °C</a>
+										</span>
+										<span class="card__rate"><i class="icon ion-ios-rocket"></i>17,000 $</span>
+									</div>
+									<div class="addtocart">
+										<a href="cart.html" >
+											<i class="icon ion-ios-cart"> add to cart</i>
+										</a>
+									</div>
+								</div>
+							</div>
+							<!-- end card -->
+	
+							<!-- card -->
+							<div class="col-6 col-sm-4 col-lg-3 col-xl-2">
+								<div class="card">
+									<div class="card__cover">
+										<img src="{{ url_for('static', filename='img/covers/adapters/ISIS_ISIPOD_2-Unit-CubeSat-deployer.png') }}" alt="">
+										<a href="GPS.html" class="card__play">
+											<i class="icon ion-ios-rocket"></i>
+										</a>
+									</div>
+									<div class="card__content">
+										<h3 class="card__title"><a href="GPS.html">ISIS ISIPOD2</a></h3>
+										<span class="card__category">
+											<a href="#">Typical Actuation Voltage = 28 V  </a>
+											<a href="#">Quasi Static Load = 15.0 g</a>
+											<a href="#">Fn greater than 90 Hz</a>
+										</span>
+										<span class="card__rate"><i class="icon ion-ios-rocket"></i>1,56,000 $</span>
+									</div>
+									<div class="addtocart">
+										<a href="cart.html" >
+											<i class="icon ion-ios-cart"> add to cart</i>
+										</a>
+									</div>
+								</div>
+							</div>
+							<!-- end card -->
+	
+							<!-- card -->
+							<div class="col-6 col-sm-4 col-lg-3 col-xl-2">
+								<div class="card">
+									<div class="card__cover">
+										<img src="{{ url_for('static', filename='img/covers/adapters/ISIS_ISIPOD_3-Unit-CubeSat-deployer.png') }}" alt="">
+										<a href="GPS.html" class="card__play">
+											<i class="icon ion-ios-rocket"></i>
+										</a>
+									</div>
+									<div class="card__content">
+										<h3 class="card__title"><a href="GPS.html">ISIS ISIPOD3</a></h3>
+										<span class="card__category">
+											<a href="#">Typical Actuation Voltage = 28 V  </a>
+											<a href="#">Sine Vibration = 4.0 g 10 Hz to 100 Hz</a>
+											<a href="#">Fn greater than 90 Hz/a>
+										</span>
+										<span class="card__rate"><i class="icon ion-ios-rocket"></i>1,24,000 $</span>
+									</div>
+									<div class="addtocart">
+										<a href="cart.html" >
+											<i class="icon ion-ios-cart"> add to cart</i>
+										</a>
+									</div>
+								</div>
+							</div>
+							<!-- end card -->
+	
+							<!-- card -->
+							<div class="col-6 col-sm-4 col-lg-3 col-xl-2">
+								<div class="card">
+									<div class="card__cover">
+										<img src="{{ url_for('static', filename='img/covers/adapters/ISIS_M3S_Microsatellite_Separation_System.png') }}" alt="">
+										<a href="GPS.html" class="card__play">
+											<i class="icon ion-ios-rocket"></i>
+										</a>
+									</div>
+									<div class="card__content">
+										<h3 class="card__title"><a href="GPS.html">ISIS M3S Microstellite system</a></h3>
+										<span class="card__category">
+											<a href="#">Flexible and versatile</a>
+											<a href="#">Shock-free release</a>
+											<a href="#">Based on heritage/a>
+										</span>
+										<span class="card__rate"><i class="icon ion-ios-rocket"></i>81,000 $</span>
+									</div>
+									<div class="addtocart">
+										<a href="cart.html" >
+											<i class="icon ion-ios-cart"> add to cart</i>
+										</a>
+									</div>
+								</div>
+							</div>
+							<!-- end card -->
+	
+						<!-- card -->
+							<div class="col-6 col-sm-4 col-lg-3 col-xl-2">
+								<div class="card">
+									<div class="card__cover">
+										<img src="{{ url_for('static', filename='img/covers/adapters/PAS_381S__15___Separation_System.png') }}" alt="">
+										<a href="GPS.html" class="card__play">
+											<i class="icon ion-ios-rocket"></i>
+										</a>
+									</div>
+									<div class="card__content">
+										<h3 class="card__title"><a href="GPS.html">PAS 381S separation system</a></h3>
+										<span class="card__category">
+											<a href="#">MNOT 222S Separation System</a>
+											<a href="#">AS 432S Separation System</a>
+											<a href="#">PRUAG 432S Separation System</a>
+										</span>
+										<span class="card__rate"><i class="icon ion-ios-rocket"></i>1,29,000 $</span>
+									</div>
+									<div class="addtocart">
+										<a href="cart.html" >
+											<i class="icon ion-ios-cart"> add to cart</i>
+										</a>
+									</div>
+								</div>
+							</div>
+							<!-- end card -->
+	
+							<!-- card -->
+							<div class="col-6 col-sm-4 col-lg-3 col-xl-2">
+								<div class="card">
+									<div class="card__cover">
+										<img src="{{ url_for('static', filename='img/covers/adapters/PAS_432S__17___Separation_System.png') }}" alt="">
+										<a href="GPS.html" class="card__play">
+											<i class="icon ion-ios-rocket"></i>
+										</a>
+									</div>
+									<div class="card__content">
+										<h3 class="card__title"><a href="GPS.html">PAS 432S separation system</a></h3>
+										<span class="card__category">
+											<a href="#">RUAG 432S Separation System</a>
+											<a href="#">CBOD-LT™ Separation System</a>
+											<a href="#">PAS 432S Separation System</a>
+										</span>
+										<span class="card__rate"><i class="icon ion-ios-rocket"></i>1,22,000 $</span>
+									</div>
+									<div class="addtocart">
+										<a href="cart.html" >
+											<i class="icon ion-ios-cart"> add to cart</i>
+										</a>
+									</div>
+								</div>
+							</div>
+							<!-- end card -->
+	
+							<!-- card -->
+							<div class="col-6 col-sm-4 col-lg-3 col-xl-2">
+								<div class="card">
+									<div class="card__cover">
+										<img src="{{ url_for('static', filename='img/covers/adapters/PAS_432S__17___Separation_System.png') }}" alt="">
+										<a href="GPS.html" class="card__play">
+											<i class="icon ion-ios-rocket"></i>
+										</a>
+									</div>
+									<div class="card__content">
+										<h3 class="card__title"><a href="GPS.html">PAS 432S separation system</a></h3>
+										<span class="card__category">
+											<a href="#">RUAG 432S Separation System</a>
+											<a href="#">CBOD-LT™ Separation System</a>
+											<a href="#">PAS 432S Separation System</a>
+										</span>
+										<span class="card__rate"><i class="icon ion-ios-rocket"></i>1,22,000 $</span>
+									</div>
+									<div class="addtocart">
+										<a href="cart.html" >
+											<i class="icon ion-ios-cart"> add to cart</i>
+										</a>
+									</div>
+								</div>
+							</div>
+							<!-- end card -->
+	
+							<!-- card -->
+							<div class="col-6 col-sm-4 col-lg-3 col-xl-2">
+								<div class="card">
+									<div class="card__cover">
+										<img src="{{ url_for('static', filename='img/covers/adapters/PAS_381S__15___Separation_System.png') }}" alt="">
+										<a href="GPS.html" class="card__play">
+											<i class="icon ion-ios-rocket"></i>
+										</a>
+									</div>
+									<div class="card__content">
+										<h3 class="card__title"><a href="GPS.html">PAS 381S separation system</a></h3>
+										<span class="card__category">
+											<a href="#">MNOT 222S Separation System</a>
+											<a href="#">AS 432S Separation System</a>
+											<a href="#">PRUAG 432S Separation System</a>
+										</span>
+										<span class="card__rate"><i class="icon ion-ios-rocket"></i>1,29,000 $</span>
+									</div>
+									<div class="addtocart">
+										<a href="cart.html" >
+											<i class="icon ion-ios-cart"> add to cart</i>
+										</a>
+									</div>
+								</div>
+							</div>
+							<!-- end card -->
+								<!-- card -->
+								<div class="col-6 col-sm-4 col-lg-3 col-xl-2">
+									<div class="card">
+										<div class="card__cover">
+											<img src="{{ url_for('static', filename='img/covers/adapters/ISIS_M3S_Microsatellite_Separation_System.png') }}" alt="">
+											<a href="GPS.html" class="card__play">
+												<i class="icon ion-ios-rocket"></i>
+											</a>
+										</div>
+										<div class="card__content">
+											<h3 class="card__title"><a href="GPS.html">ISIS M3S Microstellite system</a></h3>
+											<span class="card__category">
+												<a href="#">Flexible and versatile</a>
+												<a href="#">Shock-free release</a>
+												<a href="#">Based on heritage/a>
+											</span>
+											<span class="card__rate"><i class="icon ion-ios-rocket"></i>81,000 $</span>
+										</div>
+										<div class="addtocart">
+											<a href="cart.html" >
+												<i class="icon ion-ios-cart"> add to cart</i>
+											</a>
+										</div>
+									</div>
+								</div>
+								<!-- end card -->
+	
+							<!-- card -->
+							<div class="col-6 col-sm-4 col-lg-3 col-xl-2">
+								<div class="card">
+									<div class="card__cover">
+										<img src="{{ url_for('static', filename='img/covers/adapters/ISIS_ISIPOD_3-Unit-CubeSat-deployer.png') }}" alt="">
+										<a href="GPS.html" class="card__play">
+											<i class="icon ion-ios-rocket"></i>
+										</a>
+									</div>
+									<div class="card__content">
+										<h3 class="card__title"><a href="GPS.html">ISIS ISIPOD3</a></h3>
+										<span class="card__category">
+											<a href="#">Typical Actuation Voltage = 28 V  </a>
+											<a href="#">Sine Vibration = 4.0 g 10 Hz to 100 Hz</a>
+											<a href="#">Fn greater than 90 Hz/a>
+										</span>
+										<span class="card__rate"><i class="icon ion-ios-rocket"></i>1,24,000 $</span>
+									</div>
+									<div class="addtocart">
+										<a href="cart.html" >
+											<i class="icon ion-ios-cart"> add to cart</i>
+										</a>
+									</div>
+								</div>
+							</div>
+							<!-- end card -->
+	
+								<!-- card -->
+								<div class="col-6 col-sm-4 col-lg-3 col-xl-2">
+									<div class="card">
+										<div class="card__cover">
+											<img src="{{ url_for('static', filename='img/covers/adapters/ISIS_ISIPOD_2-Unit-CubeSat-deployer.png') }}" alt="">
+											<a href="GPS.html" class="card__play">
+												<i class="icon ion-ios-rocket"></i>
+											</a>
+										</div>
+										<div class="card__content">
+											<h3 class="card__title"><a href="GPS.html">ISIS ISIPOD2</a></h3>
+											<span class="card__category">
+												<a href="#">Typical Actuation Voltage = 28 V  </a>
+												<a href="#">Quasi Static Load = 15.0 g</a>
+												<a href="#">Fn greater than 90 Hz</a>
+											</span>
+											<span class="card__rate"><i class="icon ion-ios-rocket"></i>1,56,000 $</span>
+										</div>
+										<div class="addtocart">
+											<a href="cart.html" >
+												<i class="icon ion-ios-cart"> add to cart</i>
+											</a>
+										</div>
+									</div>
+								</div>
+								<!-- end card -->
+	
+							<!-- card -->
+							<div class="col-6 col-sm-4 col-lg-3 col-xl-2">
+								<div class="card">
+									<div class="card__cover">
+										<img src="{{ url_for('static', filename='img/covers/adapters/ISIS_ISIPOD_1-Unit-CubeSat-deployer.png') }}" alt="">
+										<a href="GPS.html" class="card__play">
+											<i class="icon ion-ios-rocket"></i>
+										</a>
+									</div>
+									<div class="card__content">
+										<h3 class="card__title"><a href="GPS.html">ISIS ISIPOD1</a></h3>
+										<span class="card__category">
+											<a href="#">access to the integrated CubeSat</a>
+											<a href="#">does not rely on a battery pack</a>
+											<a href="#">Tsurvive_min: – 50 °C</a>
+										</span>
+										<span class="card__rate"><i class="icon ion-ios-rocket"></i>17,000 $</span>
+									</div>
+									<div class="addtocart">
+										<a href="cart.html" >
+											<i class="icon ion-ios-cart"> add to cart</i>
+										</a>
+									</div>
+								</div>
+							</div>
+							<!-- end card -->
+						</div>
+					
+			</div>
+			<!-- end content tabs -->
+
+			<div class="tab-pane fade" id="tab-4" role="tabpanel" aria-labelledby="4-tab">
+				<div class="row">
+					<!-- card -->
+					<div class="col-6 col-sm-4 col-lg-3 col-xl-2">
+						<div class="card">
+							<div class="card__cover">
+								<img src="{{ url_for('static', filename='img/covers/adapters/ISIS_ISIPOD_1-Unit-CubeSat-deployer.png') }}" alt="">
+								<a href="GPS.html" class="card__play">
+									<i class="icon ion-ios-rocket"></i>
+								</a>
+							</div>
+							<div class="card__content">
+								<h3 class="card__title"><a href="GPS.html">ISIS ISIPOD1</a></h3>
+								<span class="card__category">
+									<a href="#">access to the integrated CubeSat</a>
+									<a href="#">does not rely on a battery pack</a>
+									<a href="#">Tsurvive_min: – 50 °C</a>
+								</span>
+								<span class="card__rate"><i class="icon ion-ios-rocket"></i>17,000 $</span>
+							</div>
+							<div class="addtocart">
+								<a href="cart.html" >
+									<i class="icon ion-ios-cart"> add to cart</i>
+								</a>
+							</div>
+						</div>
+					</div>
+					<!-- end card -->
+
+					<!-- card -->
+					<div class="col-6 col-sm-4 col-lg-3 col-xl-2">
+						<div class="card">
+							<div class="card__cover">
+								<img src="{{ url_for('static', filename='img/covers/adapters/ISIS_ISIPOD_2-Unit-CubeSat-deployer.png') }}" alt="">
+								<a href="GPS.html" class="card__play">
+									<i class="icon ion-ios-rocket"></i>
+								</a>
+							</div>
+							<div class="card__content">
+								<h3 class="card__title"><a href="GPS.html">ISIS ISIPOD2</a></h3>
+								<span class="card__category">
+									<a href="#">Typical Actuation Voltage = 28 V  </a>
+									<a href="#">Quasi Static Load = 15.0 g</a>
+									<a href="#">Fn greater than 90 Hz</a>
+								</span>
+								<span class="card__rate"><i class="icon ion-ios-rocket"></i>1,56,000 $</span>
+							</div>
+							<div class="addtocart">
+								<a href="cart.html" >
+									<i class="icon ion-ios-cart"> add to cart</i>
+								</a>
+							</div>
+						</div>
+					</div>
+					<!-- end card -->
+
+					<!-- card -->
+					<div class="col-6 col-sm-4 col-lg-3 col-xl-2">
+						<div class="card">
+							<div class="card__cover">
+								<img src="{{ url_for('static', filename='img/covers/adapters/ISIS_ISIPOD_3-Unit-CubeSat-deployer.png') }}" alt="">
+								<a href="GPS.html" class="card__play">
+									<i class="icon ion-ios-rocket"></i>
+								</a>
+							</div>
+							<div class="card__content">
+								<h3 class="card__title"><a href="GPS.html">ISIS ISIPOD3</a></h3>
+								<span class="card__category">
+									<a href="#">Typical Actuation Voltage = 28 V  </a>
+									<a href="#">Sine Vibration = 4.0 g 10 Hz to 100 Hz</a>
+									<a href="#">Fn greater than 90 Hz/a>
+								</span>
+								<span class="card__rate"><i class="icon ion-ios-rocket"></i>1,24,000 $</span>
+							</div>
+							<div class="addtocart">
+								<a href="cart.html" >
+									<i class="icon ion-ios-cart"> add to cart</i>
+								</a>
+							</div>
+						</div>
+					</div>
+					<!-- end card -->
+
+					<!-- card -->
+					<div class="col-6 col-sm-4 col-lg-3 col-xl-2">
+						<div class="card">
+							<div class="card__cover">
+								<img src="{{ url_for('static', filename='img/covers/adapters/ISIS_M3S_Microsatellite_Separation_System.png') }}" alt="">
+								<a href="GPS.html" class="card__play">
+									<i class="icon ion-ios-rocket"></i>
+								</a>
+							</div>
+							<div class="card__content">
+								<h3 class="card__title"><a href="GPS.html">ISIS M3S Microstellite system</a></h3>
+								<span class="card__category">
+									<a href="#">Flexible and versatile</a>
+									<a href="#">Shock-free release</a>
+									<a href="#">Based on heritage/a>
+								</span>
+								<span class="card__rate"><i class="icon ion-ios-rocket"></i>81,000 $</span>
+							</div>
+							<div class="addtocart">
+								<a href="cart.html" >
+									<i class="icon ion-ios-cart"> add to cart</i>
+								</a>
+							</div>
+						</div>
+					</div>
+					<!-- end card -->
+
+				<!-- card -->
+					<div class="col-6 col-sm-4 col-lg-3 col-xl-2">
+						<div class="card">
+							<div class="card__cover">
+								<img src="{{ url_for('static', filename='img/covers/adapters/PAS_381S__15___Separation_System.png') }}" alt="">
+								<a href="GPS.html" class="card__play">
+									<i class="icon ion-ios-rocket"></i>
+								</a>
+							</div>
+							<div class="card__content">
+								<h3 class="card__title"><a href="GPS.html">PAS 381S separation system</a></h3>
+								<span class="card__category">
+									<a href="#">MNOT 222S Separation System</a>
+									<a href="#">AS 432S Separation System</a>
+									<a href="#">PRUAG 432S Separation System</a>
+								</span>
+								<span class="card__rate"><i class="icon ion-ios-rocket"></i>1,29,000 $</span>
+							</div>
+							<div class="addtocart">
+								<a href="cart.html" >
+									<i class="icon ion-ios-cart"> add to cart</i>
+								</a>
+							</div>
+						</div>
+					</div>
+					<!-- end card -->
+
+					<!-- card -->
+					<div class="col-6 col-sm-4 col-lg-3 col-xl-2">
+						<div class="card">
+							<div class="card__cover">
+								<img src="{{ url_for('static', filename='img/covers/adapters/PAS_432S__17___Separation_System.png') }}" alt="">
+								<a href="GPS.html" class="card__play">
+									<i class="icon ion-ios-rocket"></i>
+								</a>
+							</div>
+							<div class="card__content">
+								<h3 class="card__title"><a href="GPS.html">PAS 432S separation system</a></h3>
+								<span class="card__category">
+									<a href="#">RUAG 432S Separation System</a>
+									<a href="#">CBOD-LT™ Separation System</a>
+									<a href="#">PAS 432S Separation System</a>
+								</span>
+								<span class="card__rate"><i class="icon ion-ios-rocket"></i>1,22,000 $</span>
+							</div>
+							<div class="addtocart">
+								<a href="cart.html" >
+									<i class="icon ion-ios-cart"> add to cart</i>
+								</a>
+							</div>
+						</div>
+					</div>
+					<!-- end card -->
+
+					<!-- card -->
+					<div class="col-6 col-sm-4 col-lg-3 col-xl-2">
+						<div class="card">
+							<div class="card__cover">
+								<img src="img/covers/adapters/PAS_432S__17___Separation_System.png') }}" alt="">
+								<a href="GPS.html" class="card__play">
+									<i class="icon ion-ios-rocket"></i>
+								</a>
+							</div>
+							<div class="card__content">
+								<h3 class="card__title"><a href="GPS.html">PAS 432S separation system</a></h3>
+								<span class="card__category">
+									<a href="#">RUAG 432S Separation System</a>
+									<a href="#">CBOD-LT™ Separation System</a>
+									<a href="#">PAS 432S Separation System</a>
+								</span>
+								<span class="card__rate"><i class="icon ion-ios-rocket"></i>1,22,000 $</span>
+							</div>
+							<div class="addtocart">
+								<a href="cart.html" >
+									<i class="icon ion-ios-cart"> add to cart</i>
+								</a>
+							</div>
+						</div>
+					</div>
+					<!-- end card -->
+
+					<!-- card -->
+					<div class="col-6 col-sm-4 col-lg-3 col-xl-2">
+						<div class="card">
+							<div class="card__cover">
+								<img src="{{ url_for('static', filename='img/covers/adapters/PAS_381S__15___Separation_System.png') }}" alt="">
+								<a href="GPS.html" class="card__play">
+									<i class="icon ion-ios-rocket"></i>
+								</a>
+							</div>
+							<div class="card__content">
+								<h3 class="card__title"><a href="GPS.html">PAS 381S separation system</a></h3>
+								<span class="card__category">
+									<a href="#">MNOT 222S Separation System</a>
+									<a href="#">AS 432S Separation System</a>
+									<a href="#">PRUAG 432S Separation System</a>
+								</span>
+								<span class="card__rate"><i class="icon ion-ios-rocket"></i>1,29,000 $</span>
+							</div>
+							<div class="addtocart">
+								<a href="cart.html" >
+									<i class="icon ion-ios-cart"> add to cart</i>
+								</a>
+							</div>
+						</div>
+					</div>
+					<!-- end card -->
+						<!-- card -->
+						<div class="col-6 col-sm-4 col-lg-3 col-xl-2">
+							<div class="card">
+								<div class="card__cover">
+									<img src="{{ url_for('static', filename='img/covers/adapters/ISIS_M3S_Microsatellite_Separation_System.png') }}" alt="">
+									<a href="GPS.html" class="card__play">
+										<i class="icon ion-ios-rocket"></i>
+									</a>
+								</div>
+								<div class="card__content">
+									<h3 class="card__title"><a href="GPS.html">ISIS M3S Microstellite system</a></h3>
+									<span class="card__category">
+										<a href="#">Flexible and versatile</a>
+										<a href="#">Shock-free release</a>
+										<a href="#">Based on heritage/a>
+									</span>
+									<span class="card__rate"><i class="icon ion-ios-rocket"></i>81,000 $</span>
+								</div>
+								<div class="addtocart">
+									<a href="cart.html" >
+										<i class="icon ion-ios-cart"> add to cart</i>
+									</a>
+								</div>
+							</div>
+						</div>
+						<!-- end card -->
+
+					<!-- card -->
+					<div class="col-6 col-sm-4 col-lg-3 col-xl-2">
+						<div class="card">
+							<div class="card__cover">
+								<img src="{{ url_for('static', filename='img/covers/adapters/ISIS_ISIPOD_3-Unit-CubeSat-deployer.png') }}" alt="">
+								<a href="GPS.html" class="card__play">
+									<i class="icon ion-ios-rocket"></i>
+								</a>
+							</div>
+							<div class="card__content">
+								<h3 class="card__title"><a href="GPS.html">ISIS ISIPOD3</a></h3>
+								<span class="card__category">
+									<a href="#">Typical Actuation Voltage = 28 V  </a>
+									<a href="#">Sine Vibration = 4.0 g 10 Hz to 100 Hz</a>
+									<a href="#">Fn greater than 90 Hz/a>
+								</span>
+								<span class="card__rate"><i class="icon ion-ios-rocket"></i>1,24,000 $</span>
+							</div>
+							<div class="addtocart">
+								<a href="cart.html" >
+									<i class="icon ion-ios-cart"> add to cart</i>
+								</a>
+							</div>
+						</div>
+					</div>
+					<!-- end card -->
+
+						<!-- card -->
+						<div class="col-6 col-sm-4 col-lg-3 col-xl-2">
+							<div class="card">
+								<div class="card__cover">
+									<img src="{{ url_for('static', filename='img/covers/adapters/ISIS_ISIPOD_2-Unit-CubeSat-deployer.png') }}" alt="">
+									<a href="GPS.html" class="card__play">
+										<i class="icon ion-ios-rocket"></i>
+									</a>
+								</div>
+								<div class="card__content">
+									<h3 class="card__title"><a href="GPS.html">ISIS ISIPOD2</a></h3>
+									<span class="card__category">
+										<a href="#">Typical Actuation Voltage = 28 V  </a>
+										<a href="#">Quasi Static Load = 15.0 g</a>
+										<a href="#">Fn greater than 90 Hz</a>
+									</span>
+									<span class="card__rate"><i class="icon ion-ios-rocket"></i>1,56,000 $</span>
+								</div>
+								<div class="addtocart">
+									<a href="cart.html" >
+										<i class="icon ion-ios-cart"> add to cart</i>
+									</a>
+								</div>
+							</div>
+						</div>
+						<!-- end card -->
+
+					<!-- card -->
+					<div class="col-6 col-sm-4 col-lg-3 col-xl-2">
+						<div class="card">
+							<div class="card__cover">
+								<img src="{{ url_for('static', filename='img/covers/adapters/ISIS_ISIPOD_1-Unit-CubeSat-deployer.png') }}" alt="">
+								<a href="GPS.html" class="card__play">
+									<i class="icon ion-ios-rocket"></i>
+								</a>
+							</div>
+							<div class="card__content">
+								<h3 class="card__title"><a href="GPS.html">ISIS ISIPOD1</a></h3>
+								<span class="card__category">
+									<a href="#">access to the integrated CubeSat</a>
+									<a href="#">does not rely on a battery pack</a>
+									<a href="#">Tsurvive_min: – 50 °C</a>
+								</span>
+								<span class="card__rate"><i class="icon ion-ios-rocket"></i>17,000 $</span>
+							</div>
+							<div class="addtocart">
+								<a href="cart.html" >
+									<i class="icon ion-ios-cart"> add to cart</i>
+								</a>
+							</div>
+						</div>
+					</div>
+					<!-- end card -->
+				</div>
+			
+	        </div>
+        		</div>
+			</div>	
+	</section>
+	<!-- end content -->
+
+	<!-- expected premiere -->
+	<section class="section section--bg" data-bg="{{ url_for('static', filename='img/section/section1.jpg') }}">
+		<div class="container">
+			<div class="row">
+				<!-- section title -->
+				<div class="col-12">
+					<h2 class="section__title">BOOKS</h2>
+				</div>
+				<!-- end section title -->
+
+				<!-- card -->
+				<div class=" shop-item col-6 col-sm-4 col-lg-3 col-xl-2">
+					<div class="cardd">
+						<div class="cardd__cover shop-item-image" style="height: 170px;">
+							<img src="{{ url_for('static', filename='img/covers/books/21st Century U.S. Military Manuals.jpg') }}" alt="">
+							<a href="GPS.html" class="card__play">
+								<i class="icon ion-ios-book"></i>
+							</a>
+						</div>
+						<div class="cardd__content">
+							<h3 class="cardd__title shop-item-title"><a href="GPS.html">21st Century U.S. Military Manuals</a></h3>
+							<span class="cardd__category">
+								<a href="#">Tactical Satellite Communications  </a>
+								<a href="#">Space Activities, MILSTAR, and Command</a>
+								<a href="#">U.S. Army, Department of Defense, </a>
+							</span>
+							<span class="cardd__rate shop-item-price"><i class="icon ion-ios-book"></i>500 $</span>
+						</div>
+						<div class="addtocart">
+							<a  >
+								<i class="icon ion-ios-cart shop-item-button" style="color: white;"> Add to cart</i>
+							</a>
+						</div>
+					</div>
+				</div>
+				<!-- end card -->
+
+				<!-- card -->
+				<div class="shop-item col-6 col-sm-4 col-lg-3 col-xl-2">
+					<div class="cardd">
+						<div class="cardd__cover shop-item-image" style="height: 170px;">
+							<img src="{{ url_for('static', filename='img/covers/books/Satellite Communications.jpg') }}" alt="">
+							<a href="GPS.html" class="card__play">
+								<i class="icon ion-ios-book"></i>
+							</a>
+						</div>
+						<div class="cardd__content">
+							<h3 class="cardd__title shop-item-title"><a href="GPS.html">Satellite Communications</a></h3>
+							<span class="cardd__category">
+								<a href="#">
+									Dr. D.C. Agarwal </a>
+								<a href="#">MILSTAR</a>
+								<a href="#">Department of Defense, U.S. Military
+								</a>
+							</span>
+							<span class="cardd__rate shop-item-price"><i class="icon ion-ios-book"></i>500 $</span>
+						</div>
+						<div class="addtocart">
+							<a  >
+								<i class="icon ion-ios-cart shop-item-button">Add to cart</i>
+							</a>
+						</div>
+					</div>
+				</div>
+				<!-- end card -->
+				<!-- card -->
+				<div class="shop-item col-6 col-sm-4 col-lg-3 col-xl-2">
+					<div class="cardd">
+						<div class="cardd__cover shop-item-image" style="height: 170px;">
+							<img src="{{ url_for('static', filename='img/covers/books/Digital Satellite Communication.jpg') }}" alt="">
+							<a href="GPS.html" class="card__play">
+								<i class="icon ion-ios-book"></i>
+							</a>
+						</div>
+						<div class="cardd__content">
+							<h3 class="cardd__title shop-item-title"><a href="GPS.html">Digital Satellite Communication</a></h3>
+							<span class="cardd__category">
+								<a href="#">TRI T. HA </a>
+								<a href="#">Control and Communications</a>
+								<a href="#">Department of Astrophysics,ISRO</a>
+							</span>
+							<span class="cardd__rate shop-item-price"><i class="icon ion-ios-book"></i>599 $</span>
+						</div>
+						<div class="addtocart">
+							<a  >
+								<i class="icon ion-ios-cart shop-item-button"> Add to cart</i>
+							</a>
+						</div>
+					</div>
+				</div>
+				<!-- end card -->
+
+				<!-- card -->
+				<div class="shop-item col-6 col-sm-4 col-lg-3 col-xl-2">
+					<div class="cardd">
+						<div class="cardd__cover shop-item-image" style="height: 170px;">
+							<img src="{{ url_for('static', filename='img/covers/books/FM Satellite Communication for Beginners.jpg') }}" alt="">
+							<a href="GPS.html" class="card__play">
+								<i class="icon ion-ios-book"></i>
+							</a>
+						</div>
+						<div class="cardd__content">
+							<h3 class="cardd__title shop-item-title"><a href="GPS.html">FM satellite communication</a></h3>
+							<span class="cardd__category">
+								<a href="#">Shoot for the Sky </a>
+								<a href="#">On A Budget</a>
+								<a href="#">Brian Schell</a>
+							</span>
+							<span class="cardd__rate shop-item-price"><i class="icon ion-ios-book"></i>567 $</span>
+						</div>
+						<div class="addtocart">
+							<a  >
+								<i class="icon ion-ios-cart shop-item-button"> Add to cart</i>
+							</a>
+						</div>
+					</div>
+				</div>
+				<!-- end card -->
+
+				<!-- card -->
+				<div class="shop-item col-6 col-sm-4 col-lg-3 col-xl-2">
+					<div class="cardd">
+						<div class="cardd__cover shop-item-image" style="height: 170px;">
+							<img src="{{ url_for('static', filename='img/covers/books/Laser Space Communications.jpg') }}" alt="">
+							<a href="GPS.html" class="card__play">
+								<i class="icon ion-ios-book"></i>
+							</a>
+						</div>
+						<div class="cardd__content">
+							<h3 class="cardd__title shop-item-title"><a href="GPS.html">Laser Space communication</a></h3>
+							<span class="cardd__category">
+								<a href="#">David G. Aviv</a>
+								<a href="#">Space Activities</a>
+								<a href="#">NASA
+								</a>
+							</span>
+							<span class="cardd__rate shop-item-price"><i class="icon ion-ios-book"></i>450 $</span>
+						</div>
+						<div class="addtocart">
+							<a  >
+								<i class="icon ion-ios-cart shop-item-button"> Add to cart</i>
+							</a>
+						</div>
+					</div>
+				</div>
+				<!-- end card -->
+
+				<!-- card -->
+				<div class="shop-item col-6 col-sm-4 col-lg-3 col-xl-2">
+					<div class="cardd">
+						<div class="cardd__cover shop-item-image" style="height: 170px;">
+							<img src="{{ url_for('static', filename='img/covers/books/Advanced Technology in Satellite Communication Antennas.jpg') }}" alt="">
+							<a href="GPS.html" class="card__play">
+								<i class="icon ion-ios-book"></i>
+							</a>
+						</div>
+						<div class="cardd__content">
+							<h3 class="cardd__title shop-item-title"><a href="GPS.html">Advanced Technology in Satellite Communication Antennas</a></h3>
+							<span class="cardd__category">
+								<a href="#">Electrical & Mechanical Design</a>
+								<a href="#">Takashi Kitsuregawa</a>
+							
+							</span>
+							<span class="cardd__rate shop-item-price"><i class="icon ion-ios-book"></i>700 $</span>
+						</div>
+						<div class="addtocart">
+							<a  >
+								<i class="icon ion-ios-cart shop-item-button"> Add to cart</i>
+							</a>
+						</div>
+					</div>
+				</div>
+				<!-- end card -->
+
+                <!-- card -->
+				<div class="shop-item col-6 col-sm-4 col-lg-3 col-xl-2">
+					<div class="cardd">
+						<div class="cardd__cover shop-item-image" style="height: 170px;">
+							<img src="{{ url_for('static', filename='img/covers/books/Phased Arrays for Radio Astronomy, Remote Sensing and Satellite Communication.jpg') }}" alt="">
+							<a href="GPS.html" class="card__play">
+								<i class="icon ion-ios-book"></i>
+							</a>
+						</div>
+						<div class="cardd__content">
+							<h3 class="cardd__title shop-item-title"><a href="GPS.html">Phased Arrays for Radio Astronomy, Remote Sensing and Satellite Communication</a></h3>
+							<span class="cardd__category">
+								<a href="#">Karl F. Warnick</a>
+								<a href="#">Rob Maaskant</a>
+								<a href="#">Marianna V. Ivashina</a>
+							</span>
+							<span class="cardd__rate shop-item-price"><i class="icon ion-ios-book"></i>799 $</span>
+						</div>
+						<div class="addtocart">
+							<a  >
+								<i class="icon ion-ios-cart shop-item-button"> Add to cart</i>
+							</a>
+						</div>
+					</div>
+				</div>
+				<!-- end card -->
+
+				<!-- section btn -->
+				<div class="col-12">
+					<a href="#" class="section__btn">Show more</a>
+				</div>
+				<!-- end section btn -->
+			</div>
+		</div>
+	</section>
+	<!-- end expected premiere -->
+  
+	
+    <section class="container content-section" >
+	<form  method="POST" action="/cart">   
+		<h2 class="section-header">CART</h2>
+		<div class="cart-row">
+			<span class="cart-item cart-header cart-column">ITEM</span>
+			<span class="cart-price cart-header cart-column">PRICE</span>
+			<span class="cart-quantity cart-header cart-column">QUANTITY</span>
+		</div>
+		<div class="new1">	
+		</div>
+		<!-- <div class="cart-items">
+			<input  type="text" style="display:none" name="title" value="${title}">
+        	<input  type="text" style="display:none" name="price" value="${price}">
+		</div> -->
+		<div class="cart-total">
+			<strong class="cart-total-title">Total</strong>
+			<input type="text" name="total" id="total1" style="display: none;">
+			<span class="cart-total-price">$0</span>
+		</div>
+		<!-- <input type="text" name="test" id="" value="test veae" style="display: none;"> -->
+		<!-- <input  type="text" style="display:none" name="title" value="${title}">
+        <input  type="text" style="display:none" name="price" value="${price}"> -->
+		<div class="input-group">
+			<span class="input-group-text">Address</span>
+			<textarea class="btn btn-primary " name="address"></textarea>
+		</div>
+		<button class="btn btn-primaryy btn-purchase" type="submit"><span>PURCHASE</span></button>
+	</form>
+</section>
+	
+
+	<!-- footer -->
+	<footer class="footer">
+		<div class="container">
+			<div class="row">
+				<!-- footer list -->
+				<div class="col-12 col-md-3">
+					<h6 class="footer__title">Download Our App</h6>
+					<ul class="footer__app">
+						<li><a href="#"><img src="{{ url_for('static', filename='img/Download_on_the_App_Store_Badge.svg') }}" alt=""></a></li>
+						<li><a href="#"><img src="{{ url_for('static', filename='img/google-play-badge.png') }}" alt=""></a></li>
+					</ul>
+				</div>
+				<!-- end footer list -->
+
+				<!-- footer list -->
+				<div class="col-6 col-sm-4 col-md-3">
+					<h6 class="footer__title">Resources</h6>
+					<ul class="footer__list">
+						<li><a href="#">About Us</a></li>
+						<li><a href="#">Brands</a></li>
+						<li><a href="#">Help</a></li>
+					</ul>
+				</div>
+				<!-- end footer list -->
+
+				<!-- footer list -->
+				<div class="col-6 col-sm-4 col-md-3">
+					<h6 class="footer__title">Legal</h6>
+					<ul class="footer__list">
+						<li><a href="#">Terms of Use</a></li>
+						<li><a href="#">Privacy Policy</a></li>
+						<li><a href="#">Security</a></li>
+					</ul>
+				</div>
+				<!-- end footer list -->
+
+				<!-- footer list -->
+				<div class="col-12 col-sm-4 col-md-3">
+					<h6 class="footer__title">Contact</h6>
+					<ul class="footer__list">
+						<li><a href="tel:+91 9011675787">+91 9011675787</a></li>
+						<li><a href="mailto:cse2000001028@iiti.ac.in">support@satelliteshop.com</a></li>
+					</ul>
+					<ul class="footer__social">
+						<li class="facebook"><a href="#"><i class="icon ion-logo-facebook"></i></a></li>
+						<li class="instagram"><a href="#"><i class="icon ion-logo-instagram"></i></a></li>
+						<li class="twitter"><a href="#"><i class="icon ion-logo-twitter"></i></a></li>
+						<li class="vk"><a href="#"><i class="icon ion-logo-vk"></i></a></li>
+					</ul>
+				</div>
+				<!-- end footer list -->
+
+				
+			</div>
+		</div>
+	</footer>
+	<!-- end footer -->
+
+	<!-- JS -->
+	<script src="{{ url_for('static', filename='js/jquery-3.3.1.min.js') }}"></script>
+	<script src="{{ url_for('static', filename='js/bootstrap.bundle.min.js') }}"></script>
+	<script src="{{ url_for('static', filename='js/owl.carousel.min.js') }}"></script>
+	<script src="{{ url_for('static', filename='js/jquery.mousewheel.min.js') }}"></script>
+	<script src="{{ url_for('static', filename='js/jquery.mCustomScrollbar.min.js') }}"></script>
+	<script src="{{ url_for('static', filename='js/wNumb.js') }}"></script>
+	<script src="{{ url_for('static', filename='js/nouislider.min.js') }}"></script>
+	<script src="{{ url_for('static', filename='js/plyr.min.js') }}"></script>
+	<script src="{{ url_for('static', filename='js/jquery.morelines.min.js') }}"></script>
+	<script src="{{ url_for('static', filename='js/photoswipe.min.js') }}"></script>
+	<script src="{{ url_for('static', filename='js/photoswipe-ui-default.min.js') }}"></script>
+	<script src="{{ url_for('static', filename='js/main.js') }}"></script>
+	<script src="{{ url_for('static', filename='js/store.js') }}"></script>
+</body>
+
+</html>
